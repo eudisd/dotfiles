@@ -1,9 +1,13 @@
-" Make vim more useful
+" Make Vim more useful
 set nocompatible
+" Use the OS clipboard by default (on versions compiled with `+clipboard`)
+set clipboard=unnamed
 " Enhance command-line completion
 set wildmenu
 " Allow cursor keys in insert mode
 set esckeys
+" Allow backspace in insert mode
+set backspace=indent,eol,start
 " Optimize for fast terminal connections
 set ttyfast
 " Add the g flag to search/replace by default
@@ -19,11 +23,17 @@ set noeol
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
 if exists("&undodir")
-  set undodir=~/.vim/undo
+	set undodir=~/.vim/undo
 endif
-
-" Enable line numbers
 set number
+
+" Respect modeline in files
+set modeline
+set modelines=4
+" Enable per-directory .vimrc files and disable unsafe commands in them
+set exrc
+set secure
+" Enable line numbers
 " Enable syntax highlighting
 syntax on
 " Highlight current line
@@ -49,26 +59,32 @@ set noerrorbells
 set nostartofline
 " Show the cursor position
 set ruler
-" Don’t show the intro message when starting vim
+" Don’t show the intro message when starting Vim
 set shortmess=atI
 " Show the current mode
 set showmode
 " Show the filename in the window titlebar
 set title
-if exists("&relativenumber")
-  " Use relative line numbers
-  set relativenumber
-  au BufReadPost * set relativenumber
-endif
+" Show the (partial) command as it’s being typed
+set showcmd
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
-
 " Strip trailing whitespace (,ss)
-function! StripWhitespace ()
+function! StripWhitespace()
 	let save_cursor = getpos(".")
 	let old_query = getreg('/')
 	:%s/\s\+$//e
 	call setpos('.', save_cursor)
 	call setreg('/', old_query)
 endfunction
-noremap <leader>ss :call StripWhitespace ()<CR>
+noremap <leader>ss :call StripWhitespace()<CR>
+" Save a file as root (,W)
+noremap <leader>W :w !sudo tee % > /dev/null<CR>
+
+" Automatic commands
+if has("autocmd")
+	" Enable file type detection
+	filetype on
+	" Treat .json files as .js
+	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+endif
