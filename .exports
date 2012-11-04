@@ -2,10 +2,23 @@
 export EDITOR="vim"
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
+# Highlight section titles in manual pages
+export LESS_TERMCAP_md="$ORANGE"
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
 # Make some commands not show up in history
-export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
+export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
+
+
+# PS3 DEV STUFF
+export PS3DEV=/usr/local/ps3dev
+export PSL1GHT=$PS3DEV
+
+export PATH=$PATH:$PS3DEV/bin
+export PATH=$PATH:$PS3DEV/ppu/bin
+export PATH=$PATH:$PS3DEV/spu/bin
+export PYTHONPATH=/var/www/offerpop/trunk/Engine:/var/www/offerpop/trunk/Lib:/var/www/offerpop/trunk/dashboard:/var/www/offerpop/trunk
+export DJANGO_SETTINGS_MODULE=dashboard.settings
