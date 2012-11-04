@@ -1,0 +1,79 @@
+set autoindent
+set brackets ""')>]}"
+set matchbrackets "(]}"
+
+set tabsize 4
+set tabstospaces
+
+include /home/prototype/nano/apache2.nanorc      
+include /home/prototype/nano/dummy.nanorc       
+include /home/prototype/nano/mutt.nanorc        
+include /home/prototype/nano/rcfiles-new.nanorc
+include /home/prototype/nano/asm.nanorc          
+include /home/prototype/nano/ekghistory.nanorc  
+include /home/prototype/nano/named.nanorc       
+include /home/prototype/nano/rsync.nanorc
+include /home/prototype/nano/c-file.nanorc       
+include /home/prototype/nano/etc-stuff.nanorc   
+include /home/prototype/nano/nanorc.nanorc      
+include /home/prototype/nano/ruby.nanorc
+include /home/prototype/nano/changelog.nanorc    
+include /home/prototype/nano/etcxml.nanorc      
+include /home/prototype/nano/nscd.nanorc        
+include /home/prototype/nano/shlike.nanorc
+include /home/prototype/nano/changelogs.nanorc   
+include /home/prototype/nano/gentoo.nanorc      
+include /home/prototype/nano/others.nanorc      
+include /home/prototype/nano/sh.nanorc
+include /home/prototype/nano/clike.nanorc        
+include /home/prototype/nano/groff.nanorc       
+include /home/prototype/nano/paludis.nanorc     
+include /home/prototype/nano/softcam.nanorc
+include /home/prototype/nano/c.nanorc            
+include /home/prototype/nano/havp.nanorc        
+include /home/prototype/nano/passwd.nanorc      
+include /home/prototype/nano/sources_list.nanorc
+include /home/prototype/nano/config2.nanorc      
+include /home/prototype/nano/html.nanorc        
+include /home/prototype/nano/patch.nanorc       
+include /home/prototype/nano/tab.nanorc
+include /home/prototype/nano/config3.nanorc      
+include /home/prototype/nano/info.nanorc        
+include /home/prototype/nano/perl.nanorc        
+include /home/prototype/nano/tcl.nanorc
+include /home/prototype/nano/configfiles.nanorc  
+include /home/prototype/nano/initng.nanorc      
+include /home/prototype/nano/php2.nanorc        
+include /home/prototype/nano/tex.nanorc
+include /home/prototype/nano/config.nanorc       
+include /home/prototype/nano/initscript.nanorc  
+include /home/prototype/nano/php.nanorc         
+include /home/prototype/nano/urls.nanorc
+include /home/prototype/nano/conky.nanorc        
+include /home/prototype/nano/java.nanorc        
+include /home/prototype/nano/po.nanorc          
+include /home/prototype/nano/vhost.nanorc
+include /home/prototype/nano/css.nanorc          
+include /home/prototype/nano/js.nanorc          
+include /home/prototype/nano/postgresql.nanorc  
+include /home/prototype/nano/xdefaults.nanorc
+include /home/prototype/nano/debian.nanorc       
+include /home/prototype/nano/log-stuff.nanorc   
+include /home/prototype/nano/pov.nanorc         
+include /home/prototype/nano/xml.nanorc
+include /home/prototype/nano/default.nanorc      
+include /home/prototype/nano/maincf.nanorc      
+include /home/prototype/nano/privoxy.nanorc     
+include /home/prototype/nano/xorg.nanorc
+include /home/prototype/nano/delphi.nanorc       
+include /home/prototype/nano/makefile.nanorc    
+include /home/prototype/nano/profile.nanorc
+include /home/prototype/nano/desc.nanorc         
+include /home/prototype/nano/man.nanorc         
+include /home/prototype/nano/python.nanorc
+include /home/prototype/nano/dotemacs.nanorc     
+include /home/prototype/nano/mimetype.nanorc    
+include /home/prototype/nano/rcfiles.nanorc
+
+
+
