@@ -22,3 +22,8 @@ export PATH=$PATH:$PS3DEV/ppu/bin
 export PATH=$PATH:$PS3DEV/spu/bin
 export PYTHONPATH=/var/www/offerpop/trunk/Engine:/var/www/offerpop/trunk/Lib:/var/www/offerpop/trunk/dashboard:/var/www/offerpop/trunk
 export DJANGO_SETTINGS_MODULE=dashboard.settings
+
+# npm config
+export PATH=$PATH:/usr/bin/node
+export NODE_PATH=/usr/bin/node
+export ZHANG=134.74.146.40
