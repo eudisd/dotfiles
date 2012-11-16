@@ -2,28 +2,32 @@
 export EDITOR="vim"
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
-# Highlight section titles in manual pages
-export LESS_TERMCAP_md="$ORANGE"
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
+
 # Make some commands not show up in history
-export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
+export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
+export PYTHONPATH=/www/trunk/Engine:/www/trunk/Lib:/www/trunk:/www/trunk/dashboard:/www/trunk
+export PATH=$PATH:/usr/local/sbin
+PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+PATH=/Users/eudisd/opt/android-sdk-macosx/tools:$PATH
+source /usr/local/bin/virtualenvwrapper.sh
+export PATH=/usr/local/bin:$PATH
+export DJANGO_SETTINGS_MODULE=dashboard.settings
 
+# MSP development cross compiler
+export PATH=/opt/msp430-gcc-4.4.5/bin:$PATH
+# Add the android-sdk to the PATH
 
-# PS3 DEV STUFF
+export PATH=/usr/local/yii-1.1.2/framework:$PATH
+
+# PS3 Level stuff
 export PS3DEV=/usr/local/ps3dev
 export PSL1GHT=$PS3DEV
-
 export PATH=$PATH:$PS3DEV/bin
 export PATH=$PATH:$PS3DEV/ppu/bin
 export PATH=$PATH:$PS3DEV/spu/bin
-export PYTHONPATH=/var/www/offerpop/trunk/Engine:/var/www/offerpop/trunk/Lib:/var/www/offerpop/trunk/dashboard:/var/www/offerpop/trunk
-export DJANGO_SETTINGS_MODULE=dashboard.settings
-
-# npm config
-export PATH=$PATH:/usr/bin/node
-export NODE_PATH=/usr/bin/node
-export ZHANG=134.74.146.40
+export PATH=$PATH:/usr/local/share/npm/bin
