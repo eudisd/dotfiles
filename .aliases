@@ -126,3 +126,4 @@ alias fbhookup=". ~/vm/fbhookup/bin/activate"
 alias loge='tail -f /var/log/apache2/error_log'
 alias loga='tail -f /var/log/apache2/access_log'
 alias fbhookup='. ~/vm/fbhookup/bin/activate'
+alias htop='nocorrect htop' # This assumes you're using zsh
