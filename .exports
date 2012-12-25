@@ -31,3 +31,5 @@ export PATH=$PATH:$PS3DEV/bin
 export PATH=$PATH:$PS3DEV/ppu/bin
 export PATH=$PATH:$PS3DEV/spu/bin
 export PATH=$PATH:/usr/local/share/npm/bin
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced

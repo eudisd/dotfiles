@@ -128,3 +128,5 @@ alias loga='tail -f /var/log/apache2/access_log'
 alias fbhookup='. ~/vm/fbhookup/bin/activate'
 alias htop='nocorrect htop' # This assumes you're using zsh
 alias website='. ~/vm/website/bin/activate'
+alias linky='. ~/vm/linky/bin/activate'
+alias default='. ~/vm/default/bin/activate'
