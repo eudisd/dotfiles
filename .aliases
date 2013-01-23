@@ -29,7 +29,7 @@ alias prod="sudo cp /etc/hosts /etc/hosts.bak; sudo cp /etc/hosts.prod /etc/host
 alias report="sudo cp /etc/hosts /etc/hosts.bak; sudo cp /etc/hosts.report /etc/hosts"
 
 alias ws="grep '-server-' /etc/hosts"
-alias cdw="cd /www/trunk"
+alias cdw="cd /home/eudis/git/work/"
 alias cdg="cd /Users/eudisd/repos/git/github"
 # List only directories
 alias lsd='ls -l | grep "^d"'
@@ -130,3 +130,4 @@ alias htop='nocorrect htop' # This assumes you're using zsh
 alias website='. ~/vm/website/bin/activate'
 alias linky='. ~/vm/linky/bin/activate'
 alias default='. ~/vm/default/bin/activate'
+alias sop='. ~/vm/sop/bin/activate'
