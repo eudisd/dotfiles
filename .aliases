@@ -10,16 +10,7 @@ alias work="/www/trunk"
 # programs
 alias slt='open -a "Sublime Text 2"'
 
-alias logqa="ssh eudis@aws_dev 'tail -f /log/offerpop.com/qa/www.log'"
-alias logprod="ssh eudis@aws_dev 'tail -f /log/offerpop.com/prod/www.log'"
-alias loglocal="tail -f /www/log/log.txt"
-
 alias updatedb="sudo /usr/libexec/locate.updatedb"
-alias ra="sudo apachectl restart"
-
-alias getlocallog="cat /www/log/log.txt"
-alias getprodlog="ssh eudis@aws_dev 'cat /log/offerpop.com/prod/www.log'"
-alias getqalog="ssh eudis@aws_dev 'tac /log/offerpop.com/qa/www.log'"
 
 # List all files colorized in long format, including dot files
 alias la="ls -Gla"
@@ -121,7 +112,6 @@ alias showfiles='defaults write com.apple.Finder AppleShowAllFiles YES; killall 
 alias hidefiles='defaults write com.apple.Finder AppleShowAllFiles NO; killall Finder'
 
 
-alias op=". ~/vm/offerpop-site-env/bin/activate"
 alias fbhookup=". ~/vm/fbhookup/bin/activate"
 alias loge='tail -f /var/log/apache2/error_log'
 alias loga='tail -f /var/log/apache2/access_log'
