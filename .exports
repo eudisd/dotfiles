@@ -12,7 +12,9 @@ export HISTCONTROL=ignoredups
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 export PYTHONPATH=/www/trunk/Engine:/www/trunk/Lib:/www/trunk:/www/trunk/dashboard:/www/trunk
 export PATH=$PATH:/usr/local/sbin
-PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+if [[ "$OSTYPE" == ^darwin ]]; then
+    PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+fi
 PATH=/Users/eudisd/opt/android-sdk-macosx/tools:$PATH
 source /usr/local/bin/virtualenvwrapper.sh
 export PATH=/usr/local/bin:$PATH
