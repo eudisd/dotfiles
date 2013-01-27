@@ -11,23 +11,22 @@ sudo apt-get install curl \
 
 sudo pip install virtualenv
 
+
+# Create repos directory
 cd ~; mkdir -p repos/git/github; cd repos/git/github
 
 # Github pull dotfiles and install
-
 git clone git@github.com:eudis/dotfiles
 
-# Copy dotfiles to home folder
-cd dotfiles
-cp -r .* ~
-cp -r * ~
+# Copy dotfiles to home folder and change back to $HOME
+cd dotfiles; cp -r .* ~; cp -r * ~; cd ~
 
-cd ~
-
-# oh my zsh install
+# oh-my-zsh install
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
 # Pathongen install
 mkdir -p ~/.vim/autoload ~/.vim/bundle; \
 curl -Sso ~/.vim/autoload/pathogen.vim \
 https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+
+
