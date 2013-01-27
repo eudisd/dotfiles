@@ -11,6 +11,16 @@ sudo apt-get install curl \
 
 sudo pip install virtualenv
 
+# Create default virtual machine directory
+mkdir ~/vm
+
+virtualenv ~/vm/default
+
+source ~/vm/default/bin/activate
+
+# Install pip requierments file
+
+pip install -r pip-requirements.txt
 
 # Create repos directory
 cd ~; mkdir -p repos/git/github; cd repos/git/github
@@ -28,5 +38,4 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 mkdir -p ~/.vim/autoload ~/.vim/bundle; \
 curl -Sso ~/.vim/autoload/pathogen.vim \
 https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
-
 
