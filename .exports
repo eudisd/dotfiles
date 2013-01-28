@@ -10,7 +10,6 @@ export HISTCONTROL=ignoredups
 
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
-export PYTHONPATH=/www/trunk/Engine:/www/trunk/Lib:/www/trunk:/www/trunk/dashboard:/www/trunk
 export PATH=$PATH:/usr/local/sbin
 if [[ "$OSTYPE" == ^darwin ]]; then
     PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
@@ -18,7 +17,6 @@ fi
 PATH=/Users/eudisd/opt/android-sdk-macosx/tools:$PATH
 source /usr/local/bin/virtualenvwrapper.sh
 export PATH=/usr/local/bin:$PATH
-export DJANGO_SETTINGS_MODULE=dashboard.settings
 
 # MSP development cross compiler
 export PATH=/opt/msp430-gcc-4.4.5/bin:$PATH
