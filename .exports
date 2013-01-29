@@ -15,7 +15,7 @@ if [[ "$OSTYPE" == ^darwin ]]; then
     PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 fi
 PATH=/Users/eudisd/opt/android-sdk-macosx/tools:$PATH
-source /usr/local/bin/virtualenvwrapper.sh
+
 export PATH=/usr/local/bin:$PATH
 
 # MSP development cross compiler
