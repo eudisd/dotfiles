@@ -19,8 +19,8 @@ alias prod="sudo cp /etc/hosts /etc/hosts.bak; sudo cp /etc/hosts.prod /etc/host
 alias report="sudo cp /etc/hosts /etc/hosts.bak; sudo cp /etc/hosts.report /etc/hosts"
 
 alias ws="grep '-server-' /etc/hosts"
-alias cdw="cd /home/eudis/git/work/"
-alias cdg="cd /Users/eudisd/repos/git/github"
+alias cdw="cd ~/repos/git/work/"
+alias cdg="cd ~/repos/git/github"
 # List only directories
 alias lsd='ls -l | grep "^d"'
 
