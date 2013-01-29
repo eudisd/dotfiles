@@ -7,7 +7,9 @@ done
 unset file
 
 # init z   https://github.com/rupa/z
-. ~/code/z/z.sh
+if [[ $OSTYPE == ^darwin ]]; then
+    source `brew --prefix`/etc/profile.d/z.sh
+fi
 
 
 # Case-insensitive globbing (used in pathname expansion)
