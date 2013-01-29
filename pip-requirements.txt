@@ -1,2 +1,4 @@
+sudo pip install virtualenv virtualenvwrapper
+
 pip install django \
             ipython 
