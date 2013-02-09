@@ -33,3 +33,8 @@ export PATH=$PATH:$PS3DEV/spu/bin
 export PATH=$PATH:/usr/local/share/npm/bin
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+export PATH=$PATH:/usr/local/mysql/bin/ 
+
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+export LESS="-R"
+export EDITOR="vim"
