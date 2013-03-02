@@ -121,10 +121,11 @@ alias website='. ~/vm/website/bin/activate'
 alias linky='. ~/vm/linky/bin/activate'
 alias default='. ~/vm/default/bin/activate'
 alias sop='. ~/vm/sop/bin/activate'
-
+alais vault='. ~/vm/vault/bin/activate'
 
 # Python aliases
 alias python_default='~/vm/default/bin/python'
 alias python_sop='~/vm/sop/bin/python'
 alias python_shell='cdw; cd sop/unified_platform; python manage.py shell_plus'
+
 
