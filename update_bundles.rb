@@ -39,6 +39,13 @@ git_bundles = %w{
   git://github.com/slim-template/vim-slim.git
   git://github.com/Valloric/YouCompleteMe.git
   git://github.com/tpope/vim-rbenv.git
+  git://github.com/wincent/Command-T.git
+  git://github.com/docunext/closetag.vim.git
+  git://github.com/kevinw/pyflakes-vim.git
+  git://github.com/ervandew/supertab.git
+  git://github.com/Raimondi/delimitMate.git
+  git://github.com/majutsushi/tagbar.git
+  git://github.com/altercation/vim-colors-solarized.git
 }
 
 require 'fileutils'
