@@ -46,6 +46,7 @@ git_bundles = %w{
   git://github.com/Raimondi/delimitMate.git
   git://github.com/majutsushi/tagbar.git
   git://github.com/altercation/vim-colors-solarized.git
+  git://github.com/scrooloose/nerdcommenter.git
 }
 
 require 'fileutils'
