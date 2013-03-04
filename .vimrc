@@ -102,3 +102,14 @@ set wildignore+=*.png,*.jpg,*.gif
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
+
+" Custom Compiler Option For PyLinting
+" autocmd FileType python compiler pylint
+
+" Custom Mappings 
+noremap <leader>o <Esc>:CommandT<CR>
+noremap <leader>O <Esc>:CommandTFlush<CR>
+noremap <leader>m <Esc>:CommandTBuffer<CR>
+
+let g:tagbar_usearrows = 1
+nnoremap <leader>l :TagbarToggle<CR>
