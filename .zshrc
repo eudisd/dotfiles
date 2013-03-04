@@ -5,7 +5,8 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="jonathan"
+ZSH_THEME="pygmalion"
+# ZSH_THEME="agnoster"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -38,8 +39,18 @@ source $ZSH/oh-my-zsh.sh
 #source ~/.bash_profile
 # Customize to your needs...
 export PATH=/usr/local/yii-1.1.2/framework:/opt/msp430-gcc-4.4.5/bin:/usr/local/bin:/Users/eudisd/opt/android-sdk-macosx/tools:/libexec/gnubin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/sbin:/usr/local/ps3dev/bin:/usr/local/ps3dev/ppu/bin:/usr/local/ps3dev/spu/bin:/usr/local/share/npm/bin
-
+export PATH=$PATH:/usr/local/mysql/bin
 for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
+
+source /usr/local/bin/virtualenvwrapper.sh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# Set VIM bindings for the command line 
+set -o vi
