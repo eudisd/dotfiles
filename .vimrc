@@ -111,13 +111,15 @@ set sidescroll=1
 
 " :autocmd InsertEnter,InsertLeave * set cul!
 
-" Custom Mappings 
-noremap <leader>o <Esc>:CommandT<CR>
-noremap <leader>O <Esc>:CommandTFlush<CR>
+" ================= Custom Mappings ================= 
+nmap <c-t> :vs<bar>:b#<CR>  " Open the last closed window
+noremap <leader>o <Esc>:CommandT<CR> 
+noremap <leader>O <Esc>:CommandTFlush<CR> 
 noremap <leader>m <Esc>:CommandTBuffer<CR>
 
 let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
+nnoremap <leader>n :NERDTree<CR>
 
 " This bit of vim code simply checks to see if the cursor charactor
 " can be set in the current terminal mode.  This is useful for when 
