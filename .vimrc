@@ -74,6 +74,9 @@ set list listchars=tab:\ \ ,trail:·
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
+" ==============Set Leader Key ======================
+let mapleader=","
+
 " ================ Folds ============================
 
 set foldmethod=indent   "fold based on indent
@@ -116,6 +119,9 @@ noremap <leader>m <Esc>:CommandTBuffer<CR>
 let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
 
+" This bit of vim code simply checks to see if the cursor charactor
+" can be set in the current terminal mode.  This is useful for when 
+" we want to change the cursor when we enter insert mode.
 if exists('$TMUX')
     let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
     let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
