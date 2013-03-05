@@ -1,4 +1,4 @@
-" Use Vim settings, rather then Vi settings (much better!).
+" Us Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
@@ -110,6 +110,8 @@ set sidescroll=1
 " autocmd FileType python compiler pylint
 
 " :autocmd InsertEnter,InsertLeave * set cul!
+" ================= Custome Functions ===============
+
 
 " ================= Custom Mappings ================= 
 nmap <c-t> :vs<bar>:b#<CR>  " Open the last closed window
@@ -120,6 +122,10 @@ noremap <leader>m <Esc>:CommandTBuffer<CR>
 let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
 nnoremap <leader>n :NERDTree<CR>
+
+" Edit and save/reload your vimrc file
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 " This bit of vim code simply checks to see if the cursor charactor
 " can be set in the current terminal mode.  This is useful for when 
@@ -132,3 +138,5 @@ else
     let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
 
+" Enable the horizontal split on CommandT results
+let s:CommandTAcceptSelectionSplitMap=['<CR>', '<C-g>']
