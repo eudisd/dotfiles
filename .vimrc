@@ -123,6 +123,9 @@ let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
 nnoremap <leader>n :NERDTree<CR>
 
+map <leader>j :RopeGotoDefinition<CR>
+map <leader>r :RopeRename<CR>
+
 " Edit and save/reload your vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
@@ -139,4 +142,4 @@ else
 endif
 
 " Enable the horizontal split on CommandT results
-let s:CommandTAcceptSelectionSplitMap=['<CR>', '<C-g>']
+let g:CommandTAcceptSelectionSplitMap=['<CR>', '<C-g>']
