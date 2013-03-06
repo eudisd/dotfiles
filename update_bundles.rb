@@ -48,6 +48,7 @@ git_bundles = %w{
   git://github.com/altercation/vim-colors-solarized.git
   git://github.com/scrooloose/nerdcommenter.git
   git://github.com/peplin/ropevim.git
+  git://github.com/mileszs/ack.vim.git
 }
 
 require 'fileutils'
