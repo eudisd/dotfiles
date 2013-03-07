@@ -5,7 +5,9 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="pygmalion"
+ZSH_THEME="junkfood"
+#ZSH_THEME="kennethreitz"
+#ZSH_THEME="pygmalion"
 # ZSH_THEME="agnoster"
 
 # Example aliases
@@ -54,3 +56,4 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Set VIM bindings for the command line 
 set -o vi
+bindkey '^R' history-incremental-pattern-search-backward

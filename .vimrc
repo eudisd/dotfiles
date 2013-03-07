@@ -126,9 +126,12 @@ nnoremap <leader>n :NERDTree<CR>
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
 
+hi SpellBad cterm=underline ctermfg=white
+
 " Edit and save/reload your vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
 
 " This bit of vim code simply checks to see if the cursor charactor
 " can be set in the current terminal mode.  This is useful for when 
