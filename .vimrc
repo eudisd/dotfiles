@@ -126,6 +126,10 @@ nnoremap <leader>n :NERDTree<CR>
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
 
+" This bit of code imports all the modules into the Rope namespace,
+" so that it can detect those libs
+let g:ropevim_autoimport_modules = ["os.*","traceback","django.*", "xml.etree"]
+
 hi SpellBad cterm=underline ctermfg=white
 
 " Edit and save/reload your vimrc file
@@ -145,4 +149,8 @@ else
 endif
 
 " Enable the horizontal split on CommandT results
-let g:CommandTAcceptSelectionSplitMap=['<CR>', '<C-g>']
+" let g:CommandTAcceptSelectionSplitMap=['<CR>', '<C-g>']
+
+" This bit configures the PEP8 Column length
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%101v.\+/
