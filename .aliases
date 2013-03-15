@@ -121,6 +121,7 @@ alias website='. ~/vm/website/bin/activate'
 alias linky='. ~/vm/linky/bin/activate'
 alias default='. ~/vm/default/bin/activate'
 alias sop='. ~/vm/sop/bin/activate'
+alias sop_v2='. ~/vm/sop_v2/bin/activate'
 alias vault='. ~/vm/vault/bin/activate'
 
 # Python aliases

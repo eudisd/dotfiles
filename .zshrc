@@ -57,3 +57,6 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # Set VIM bindings for the command line 
 set -o vi
 bindkey '^R' history-incremental-pattern-search-backward
+
+# Virtualenv config
+export WORKON_HOME=$HOME/vm
