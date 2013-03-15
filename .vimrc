@@ -12,9 +12,9 @@ endif
 " This loads all the plugins in ~/.vim/bundle
 " Use tpope's pathogen plugin to manage all other plugins
 
-  runtime bundle/tpope-vim-pathogen/autoload/pathogen.vim
-  call pathogen#infect()
-  call pathogen#helptags()
+runtime bundle/tpope-vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+call pathogen#helptags()
 
 " ================ General Config ====================
 
@@ -98,7 +98,15 @@ set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 
-"
+" ================ Status Line Info =================
+
+set ruler
+set rulerformat=%-14.(%l,%c%V%)\ %P
+set statusline=%F%m%r%h%w\ 
+set statusline+=%{fugitive#statusline()}\    
+set statusline+=[%{strlen(&fenc)?&fenc:&enc}]
+set statusline+=\ [line\ %l\/%L]          
+set statusline+=%{rvm#statusline()} 
 
 " ================ Scrolling ========================
 
@@ -110,7 +118,7 @@ set sidescroll=1
 " autocmd FileType python compiler pylint
 
 " :autocmd InsertEnter,InsertLeave * set cul!
-" ================= Custome Functions ===============
+" ================= Custom Functions ===============
 
 
 " ================= Custom Mappings ================= 
@@ -126,9 +134,12 @@ nnoremap <leader>n :NERDTree<CR>
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
 
+" This opens the definition on a split window
+let g:pymode_rope_goto_def_newwin = "new"
+
 " This bit of code imports all the modules into the Rope namespace,
-" so that it can detect those libs
-let g:ropevim_autoimport_modules = ["os.*","traceback","django.*", "xml.etree"]
+" so that it can detect those libs.
+let g:ropevim_autoimport_modules = ["os.*", "traceback", "django.*", "xml.etree"]
 
 hi SpellBad cterm=underline ctermfg=white
 
@@ -136,6 +147,13 @@ hi SpellBad cterm=underline ctermfg=white
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+" Refresh all buffers in the current vim session.
+nmap <leader>gr :bufdo e<CR>
+
+" Mapping to load the sop faster
+nmap <leader>vsop :VirtualEnvActivate sop<CR>
+
+nmap <leader>bd :%bdelete<CR>
 
 " This bit of vim code simply checks to see if the cursor charactor
 " can be set in the current terminal mode.  This is useful for when 
@@ -154,3 +172,6 @@ endif
 " This bit configures the PEP8 Column length
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%101v.\+/
+
+colorscheme advantage
+
