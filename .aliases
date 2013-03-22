@@ -129,6 +129,9 @@ alias python_default='~/vm/default/bin/python'
 alias python_sop='~/vm/sop/bin/python'
 alias python_shell='cdw; cd sop/unified_platform; python manage.py shell_plus'
 
+# Misc
+#alias tmux="TERM=screen-256color-bce tmux"
+
 # No Correct Section (for zsh bootstrapping)
 alias vim='nocorrect vim'
 alias npm='nocorrect npm'

@@ -1,0 +1,99 @@
+db.action_log.aggregate(     {          $group: {              _id: {                 action_id: "$action_id",                 placement_id: "$placement_id"              }         }     },     {          $project: {             new_field: {                 "new_field": 1             }         }     } )
+db.action_log.aggregate({ $project: { action_id: 1} })
+use unified_db;
+db.action_log.find().pretty()
+pp
+use unified_db;
+db.action_log.find()
+it
+db.action_log.dump()
+db.action_log.drop()
+db.action_log.find()
+use unified_db
+db.action_log.fined()
+db.action_log.find()
+db.action_log.find().pretty()
+db.action_log.find()
+db.action_log.drop()
+db.action_log.find()
+db.action_log.drop()
+db.action_log.find()
+db.action_log.drop()
+db.action_log.find()
+db.action_log.drop()
+db.action_log.find()
+db.action_log.find().pretty()
+db.action_log.drop()
+db.action_log.find().pretty()
+db.action_log.drop()
+db.action_log.find().pretty()
+db.action_log.drop()
+db.action_log.find().pretty()
+[
+use unified_db
+db.action_log.find()
+db.action_log.drop(0 )
+db.action_log.drop()
+db.action_log.find().pretty()
+db.action_log.find().count()
+db.action_log.find().drop()
+db.action_log.drop()
+db.action_log.find()
+db.action_log.find().pretty(0 )
+db.action_log.drop()
+db.action_log.find().pretty(0 )
+db.action_log.drop()
+db.action_log.find().pretty()
+db.action_log.find().pretty(0 )
+db.action_log.drop()
+db.action_log.find().pretty(0 )
+db.action_log.drop()
+db.action_log.find().pretty()
+db.action_log.drop()
+db.action_log.find().pretty()
+use unified_db;
+db.action_log.find().pretty()
+db.action_log.find().count()
+db.action-log.drop()
+db.action_log.drop()
+db.action_log.find()
+db.action_log.find().pretty()
+db.action_log.drop()
+db.action_log.find().pretty()
+db.action_log.drop()
+db.action_log.find().pretty()
+db.action_log.drop()
+db.action_log.find().pretty()
+db.action_log.find().count()
+db.action_log.drop()
+db.action_log.find().count()
+db.action_log.find().pretty()
+db.action_log.find().count()
+db.action_log.find().pretty()
+\q
+use unified_db;
+db.action_log.count()
+db.action_log.find().pretty()
+show dbs
+;
+use database
+db.action_log.insert({'x': 1})
+db.action_log.find()
+use unified_db;
+db.action_log.find()
+db.action_log.aggregate({$group: { _id: {action_id: "$action_id", placement_id: "$placement_id"}} })
+db.action_log.aggregate({$group: { _id: {action_id: "$action_id", placement_id: "$placement_id"}, b: 1} })
+db.action_log.aggregate({$group: { _id: {action_id: "$action_id", placement_id: "$placement_id"}, b: {}} })
+db.action_log.aggregate({$group: { _id: {action_id: "$action_id", placement_id: "$placement_id"}, b: {b2: "$action_id"}} })
+db.action_log.aggregate({$group: { _id: {action_id: "$action_id", placement_id: "$placement_id"}} })
+db.action_log.aggregate({$group: { _id: {action_id: "$action_id", placement_id: "$placement_id"}} }).count()
+use unified_db;
+db.action_log.aggregate({$group: { _id: {action_id: "$action_id", placement_id: "$placement_id"}} })['result']
+db.action_log.aggregate({$group: { _id: {action_id: "$action_id", placement_id: "$placement_id"}} })['result'].length
+use unified_db;
+db.action_log.count()
+db.action_log.aggregate({$group: { _id: {action_id: "$action_id", placement_id: "$placement_id"}, sum: $sum} })['result']
+use unified_db;
+db.action_log.find()
+db.action_log.drop()
+db.action_log.find().count()

@@ -52,6 +52,7 @@ git_bundles = %w{
   git://github.com/jmcantrell/vim-virtualenv.git
   git://github.com/klen/python-mode.git
   git://github.com/flazz/vim-colorschemes.git
+  git://github.com/KevinGoodsell/vim-csexact.git
 }
 
 require 'fileutils'

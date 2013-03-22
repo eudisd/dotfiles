@@ -135,11 +135,13 @@ map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
 
 " This opens the definition on a split window
-let g:pymode_rope_goto_def_newwin = "new"
+" let g:pymode_rope_goto_def_newwin = "new"
 
 " This bit of code imports all the modules into the Rope namespace,
 " so that it can detect those libs.
-let g:ropevim_autoimport_modules = ["os.*", "traceback", "django.*", "xml.etree"]
+" let g:ropevim_autoimport_modules = ["os.*", "traceback", "django.*", "xml.etree"]
+
+let g:jedi#goto_command = "<leader>g"
 
 hi SpellBad cterm=underline ctermfg=white
 
@@ -173,5 +175,13 @@ endif
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%101v.\+/
 
-colorscheme advantage
+set t_Co=256
+
+let g:jedi#related_names_command = "<leader>N"
+"let g:solarized_termcolors = 256
+"let g:solarized_visibility = "high"
+"let g:solarized_contrast = "high"
+" set background=dark
+" colorscheme solarized
+colorscheme matrix
 
