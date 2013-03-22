@@ -18,23 +18,6 @@ PATH=/Users/eudisd/opt/android-sdk-macosx/tools:$PATH
 
 export PATH=/usr/local/bin:$PATH
 
-# MSP development cross compiler
-export PATH=/opt/msp430-gcc-4.4.5/bin:$PATH
-# Add the android-sdk to the PATH
-
-export PATH=/usr/local/yii-1.1.2/framework:$PATH
-
-# PS3 Level stuff
-export PS3DEV=/usr/local/ps3dev
-export PSL1GHT=$PS3DEV
-export PATH=$PATH:$PS3DEV/bin
-export PATH=$PATH:$PS3DEV/ppu/bin
-export PATH=$PATH:$PS3DEV/spu/bin
-export PATH=$PATH:/usr/local/share/npm/bin
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
-export PATH=$PATH:/usr/local/mysql/bin/ 
-
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 export LESS="-R"
 export EDITOR="vim"
