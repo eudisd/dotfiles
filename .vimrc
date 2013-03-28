@@ -105,8 +105,8 @@ set rulerformat=%-14.(%l,%c%V%)\ %P
 set statusline=%F%m%r%h%w\ 
 set statusline+=%{fugitive#statusline()}\    
 set statusline+=[%{strlen(&fenc)?&fenc:&enc}]
-set statusline+=\ [line\ %l\/%L]          
-set statusline+=%{rvm#statusline()} 
+set statusline+=\ [line\ %l\/%L] 
+"set statusline+=%{rvm#statusline()} 
 
 " ================ Scrolling ========================
 
@@ -139,9 +139,9 @@ map <leader>r :RopeRename<CR>
 
 " This bit of code imports all the modules into the Rope namespace,
 " so that it can detect those libs.
-" let g:ropevim_autoimport_modules = ["os.*", "traceback", "django.*", "xml.etree"]
+let g:ropevim_autoimport_modules = ["os.*", "traceback", "django.*", "xml.etree"]
 
-let g:jedi#goto_command = "<leader>g"
+"let g:jedi#goto_command = "<leader>g"
 
 hi SpellBad cterm=underline ctermfg=white
 
@@ -183,5 +183,6 @@ let g:jedi#related_names_command = "<leader>N"
 "let g:solarized_contrast = "high"
 " set background=dark
 " colorscheme solarized
+" colorscheme  codeblocks_dark 
 colorscheme matrix
 
