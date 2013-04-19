@@ -1,53 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <histoqueries>
- <histoquery>SELECT id, name, value, clicks, invalid_clicks, conversions, invalid_conversions, 
-       placement_stat_daily_id, impressions, unique_impressions, widget_clicks, 
-       widget_clicks_unique, cost
-  FROM up_tracking_placementparamsstatdaily limit 10;
+ <histoquery>SELECT id, name, app_label, model
+  FROM django_content_type where id=75;
 </histoquery>
- <histoquery>SELECT id, name, value, clicks, invalid_clicks, conversions, invalid_conversions, 
-       placement_stat_daily_id, impressions, unique_impressions, widget_clicks, 
-       widget_clicks_unique, cost
-  FROM up_tracking_placementparamsstatdaily order by id desc limit 10;
-</histoquery>
- <histoquery>SELECT id, name, value, clicks, invalid_clicks, conversions, invalid_conversions, 
-       placement_stat_daily_id, impressions, unique_impressions, widget_clicks, 
-       widget_clicks_unique, cost
-  FROM up_tracking_placementparamsstatdaily order by id desc limit 20;
-</histoquery>
- <histoquery>SELECT id, impressions, clicks, invalid_clicks, conversions, invalid_conversions, 
-       stat_date, action_id, cost, unique_impressions, widget_clicks, 
-       widget_clicks_unique
-  FROM up_tracking_actionstatdaily order by id limit 10;
+ <histoquery>SELECT id, name, app_label, model
+  FROM django_content_type where id=70;
 </histoquery>
  <histoquery>SELECT id, impressions, clicks, invalid_clicks, conversions, invalid_conversions, 
        stat_date, action_id, placement_id, cost, unique_impressions, 
        widget_clicks, widget_clicks_unique
-  FROM up_tracking_placementstatdaily limit 10;
+  FROM up_tracking_placementstatdaily order by id desc limit 10;
 </histoquery>
  <histoquery>SELECT id, impressions, clicks, invalid_clicks, conversions, invalid_conversions, 
        stat_date, action_id, placement_id, cost, unique_impressions, 
        widget_clicks, widget_clicks_unique
-  FROM up_tracking_placementstatdaily limit 100;
+  FROM up_tracking_placementstatdaily where action_id=2614 order by id desc limit 1000;
 </histoquery>
  <histoquery>SELECT id, impressions, clicks, invalid_clicks, conversions, invalid_conversions, 
        stat_date, action_id, placement_id, cost, unique_impressions, 
        widget_clicks, widget_clicks_unique
-  FROM up_tracking_placementstatdaily limit 500;
+  FROM up_tracking_placementstatdaily where action_id=2651 order by id desc limit 1000;
 </histoquery>
  <histoquery>SELECT id, impressions, clicks, invalid_clicks, conversions, invalid_conversions, 
        stat_date, action_id, placement_id, cost, unique_impressions, 
        widget_clicks, widget_clicks_unique
-  FROM up_tracking_placementstatdaily where invalid_conversions != 0 limit 500;
-</histoquery>
- <histoquery>SELECT id, name, value, clicks, invalid_clicks, conversions, invalid_conversions, 
-       action_stat_daily_id, impressions, unique_impressions, widget_clicks, 
-       widget_clicks_unique, cost
-  FROM up_tracking_actionparamsstatdaily limit 10;
+  FROM up_tracking_placementstatdaily order by id desc limit 1000;
 </histoquery>
  <histoquery>SELECT id, impressions, clicks, invalid_clicks, conversions, invalid_conversions, 
-       hour, action_stat_daily_id, cost, unique_impressions, widget_clicks, 
-       widget_clicks_unique
-  FROM up_tracking_actionstathourly limit 100;
+       stat_date, action_id, placement_id, cost, unique_impressions, 
+       widget_clicks, widget_clicks_unique
+  FROM up_tracking_placementstatdaily  order by id desc limit 1000;
+</histoquery>
+ <histoquery>SELECT id, impressions, clicks, invalid_clicks, conversions, invalid_conversions, 
+       stat_date, action_id, placement_id, cost, unique_impressions, 
+       widget_clicks, widget_clicks_unique
+  FROM up_tracking_placementstatdaily  order by action_id desc limit 1000;
+</histoquery>
+ <histoquery>SELECT id, platform, action_desc, display_name, emv_include
+  FROM up_reporting_emvactionlookup;
+</histoquery>
+ <histoquery>SELECT id, platform, action_desc, display_name, emv_include
+  FROM up_reporting_emvactionlookup order by id desc limit 100;
+
 </histoquery>
 </histoqueries>
