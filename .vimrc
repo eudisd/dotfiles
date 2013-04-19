@@ -26,6 +26,7 @@ set showmode                    "Show current mode down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
+set spell
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
@@ -34,6 +35,8 @@ set hidden
 
 "turn on syntax highlighting
 syntax on
+
+set wrap
 
 " ================ Search Settings  =================
 
@@ -60,9 +63,9 @@ set undofile
 set autoindent
 set smartindent
 set smarttab
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 set expandtab
 
 filetype plugin on
@@ -71,7 +74,7 @@ filetype indent on
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·
 
-set nowrap       "Don't wrap lines
+" set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
 " ==============Set Leader Key ======================
@@ -177,12 +180,15 @@ match OverLength /\%101v.\+/
 
 set t_Co=256
 
-let g:jedi#related_names_command = "<leader>N"
+"let g:jedi#related_names_command = "<leader>N"
 "let g:solarized_termcolors = 256
 "let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
 " set background=dark
-" colorscheme solarized
-" colorscheme  codeblocks_dark 
-colorscheme matrix
+colorscheme solarized
+"colorscheme  codeblocks_dark 
+
+colorscheme dual
+
+
 
