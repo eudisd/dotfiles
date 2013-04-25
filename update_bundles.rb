@@ -53,6 +53,7 @@ git_bundles = %w{
   git://github.com/klen/python-mode.git
   git://github.com/flazz/vim-colorschemes.git
   git://github.com/KevinGoodsell/vim-csexact.git
+  git://github.com/robhudson/snipmate_for_django.git
 }
 
 require 'fileutils'
