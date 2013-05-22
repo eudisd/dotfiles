@@ -55,6 +55,10 @@ git_bundles = %w{
   git://github.com/robhudson/snipmate_for_django.git
   git@github.com:eudisd/vim-csapprox.git
   git@github.com:jnwhiteh/vim-golang.git
+  git clone git://github.com/garbas/vim-snipmate.git
+  git clone https://github.com/tomtom/tlib_vim.git
+  git clone https://github.com/MarcWeber/vim-addon-mw-utils.git
+  git clone https://github.com/honza/vim-snippets.git
 }
 
 require 'fileutils'
