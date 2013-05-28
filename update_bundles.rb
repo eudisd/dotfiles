@@ -13,7 +13,6 @@ git_bundles = %w{
   git://github.com/kchmck/vim-coffee-script.git
   git://github.com/kien/ctrlp.vim.git
   git://github.com/nelstrom/vim-textobj-rubyblock.git
-  git://github.com/pangloss/vim-javascript.git
   git://github.com/scrooloose/nerdtree.git
   git://github.com/sickill/vim-pasta.git
   git://github.com/timcharper/textile.vim.git
