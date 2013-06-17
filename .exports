@@ -18,6 +18,9 @@ PATH=/Users/eudisd/opt/android-sdk-macosx/tools:$PATH
 
 export PATH=/usr/local/bin:$PATH
 
+export CLOJURESCRIPT_HOME=~/repos/git/clojurescript
+export PATH=$PATH:$CLOJURESCRIPT_HOME/bin
+
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 export LESS="-R"
 export EDITOR="vim"
