@@ -1,4 +1,4 @@
-#files: 640	version: 4.3.11
+#files: 643	version: 4.3.11
 
 _comps=(
 '-' '_precommand'
@@ -156,6 +156,7 @@ _comps=(
 'ckeygen' '_twisted'
 'clear' '_nothing'
 'co' '_rcs'
+'coffee' '_coffee'
 'comb' '_sccs'
 'combine' '_imagemagick'
 'comm' '_comm'
@@ -282,6 +283,7 @@ _comps=(
 'express' '_webbrowser'
 'extcheck' '_java'
 'extractres' '_psutils'
+'fab' '_fab'
 'fakeroot' '_fakeroot'
 'false' '_nothing'
 'fc' '_fc'
@@ -331,6 +333,7 @@ _comps=(
 'gcore' '_gcore'
 'gdb' '_gdb'
 'gdiff' '_diff'
+'gem' '_gem'
 'genisoimage' '_genisoimage'
 'get' '_sccs'
 'getafm' '_psutils'
@@ -1183,74 +1186,46 @@ bindkey '^[,' _history-complete-newer
 bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
-autoload -Uz __function_on_stack __list_remote_all_for __list_remote_jruby_for __list_remote_rbx_for __list_remote_rubies_for \
-            __rvm_add_to_path __rvm_after_cd __rvm_array_add_or_update __rvm_array_contains __rvm_array_prepend_or_ignore \
-            __rvm_ask_for __rvm_ask_to_trust __rvm_become __rvm_bin_script __rvm_bin_scripts \
-            __rvm_calculate_remote_file __rvm_call_with_restored_umask __rvm_cd __rvm_check_rvmrc_trustworthiness __rvm_checksum_all \
-            __rvm_checksum_any __rvm_checksum_calculate_file __rvm_checksum_none __rvm_checksum_read __rvm_checksum_validate_file \
-            __rvm_checksum_write __rvm_clean_path __rvm_cleanse_variables __rvm_cleanup_tmp __rvm_conditionally_add_bin_path \
-            __rvm_conditionally_do_with_env __rvm_current_gemcache_dir __rvm_current_gemset __rvm_custom_separated_array __rvm_db \
-            __rvm_default_flags __rvm_detect_system __rvm_detect_xcode_version __rvm_detect_xcode_version_is __rvm_display_rvmrc \
-            __rvm_do_with_env __rvm_do_with_env_after __rvm_do_with_env_before __rvm_ensure_has_environment_files __rvm_ensure_is_a_function \
-            __rvm_env_string __rvm_expand_ruby_string __rvm_export __rvm_find_first_file __rvm_fix_group_permissions \
-            __rvm_gemset_clear __rvm_gemset_handle_default __rvm_gemset_select __rvm_gemset_select_cli __rvm_gemset_select_cli_validation \
-            __rvm_gemset_select_ensure __rvm_gemset_select_only __rvm_gemset_select_validation __rvm_gemset_use __rvm_gemsets_initial \
-            __rvm_has_opt __rvm_initialize __rvm_inspect __rvm_join_array __rvm_load_environment \
-            __rvm_load_project_config __rvm_load_rvmrc __rvm_log_command __rvm_manage_wrapper __rvm_md5_calculate \
-            __rvm_md5_for __rvm_md5_for_contents __rvm_meta __rvm_nuke_rvm_variables __rvm_package_create \
-            __rvm_package_extract __rvm_package_list __rvm_pager_or_cat_v __rvm_parse_args __rvm_parse_args_find_known_flags \
-            __rvm_project_dir_check __rvm_project_rvmrc __rvm_read_lines __rvm_reboot __rvm_record_install \
-            __rvm_recorded_install_command __rvm_remote_extension __rvm_remote_server_path __rvm_remote_server_path_single __rvm_remove_from_array \
-            __rvm_remove_from_path __rvm_remove_install_record __rvm_remove_rvm_from_path __rvm_reset_rvmrc_trust __rvm_rm_rf \
-            __rvm_rm_rf_verbose __rvm_ruby_config_get __rvm_ruby_config_save __rvm_ruby_package_file __rvm_ruby_string \
-            __rvm_ruby_string_paths_under __rvm_ruby_strings_exist __rvm_rubygems_create_link __rvm_run __rvm_run_script \
-            __rvm_run_with_env __rvm_rvmrc_key __rvm_rvmrc_stored_trust __rvm_rvmrc_stored_trust_check __rvm_rvmrc_tools \
-            __rvm_sed_i __rvm_select __rvm_set_ruby_version __rvm_set_rvmrc __rvm_set_versions_conf \
-            __rvm_setup __rvm_setup_cd __rvm_setup_cd_function __rvm_sha256_for __rvm_sha256_for_contents \
-            __rvm_sha__calculate __rvm_source_dir __rvm_string_match __rvm_strings __rvm_strip \
-            __rvm_switch __rvm_system_path __rvm_system_path_for __rvm_teardown __rvm_teardown_final \
-            __rvm_trust_rvmrc __rvm_unset_exports __rvm_unset_ruby_variables __rvm_untrust_rvmrc __rvm_usage \
-            __rvm_use __rvm_use_system __rvm_using_gemset_globalcache __rvm_version __rvm_version_compare \
-            __rvm_warn_on_rubyopt __rvm_which __variables_definition _a2ps _a2utils \
-            _aap _acpi _acpitool _acroread _alias \
-            _aliases _all_labels _all_matches _alternative _analyseplugin \
-            _ant _antiword _apachectl _apm _approximate \
-            _apt _apt-file _apt-move _apt-show-versions _aptitude \
-            _arch_archives _arch_namespace _arg_compile _arguments _arp \
-            _arping _arrays _assign _attr _auto-apt \
-            _autocd _awk _axi-cache _bash_completions _baz \
-            _bind_addresses _bindkey _bison _bittorrent _bogofilter \
-            _brace_parameter _brctl _brew _bsd_pkg _bts \
-            _bug _builtin _bzip2 _bzr _cache_invalid \
-            _cal _calendar _call_function _canonical_paths _ccal \
-            _cd _cdbs-edit-patch _cdcd _cdr _cdrdao \
-            _cdrecord _chflags _chkconfig _chmod _chown \
-            _chrt _combination _comm _command _command_names \
-            _compdef _complete _complete_debug _complete_help _complete_help_generic \
-            _complete_tag _compress _condition _configure _coreadm \
-            _correct _correct_filename _correct_word _cowsay _cp \
-            _cpio _cplay _cssh _csup _ctags_tags \
-            _cut _cvs _cvsup _cygcheck _cygpath \
-            _cygrunsrv _cygserver _cygstart _dak _darcs \
-            _date _dchroot _dchroot-dsa _dcop _dd \
-            _deb_packages _debchange _debdiff _debfoster _debsign \
-            _default _defaults _delimiters _describe _description \
-            _devtodo _dhclient _dhcpinfo _dict _dict_words \
-            _diff _diff_options _diffstat _dir_list _directories \
-            _directory_stack _dirs _disable _dispatch _django \
-            _dladm _dlocate _dmidecode _domains _dpatch-edit-patch \
-            _dpkg _dpkg-buildpackage _dpkg-cross _dpkg-repack _dpkg_source \
-            _dput _du _dumpadm _dumper _dupload \
-            _dvi _dynamic_directory_name _ecasound _echotc _echoti \
-            _elinks _elm _email_addresses _emulate _enable \
-            _enscript _env _equal _espeak _ethtool \
-            _expand _expand_alias _expand_word _fakeroot _fc \
-            _feh _fetch _fetchmail _ffmpeg _figlet \
-            _file_descriptors _file_systems _files _find _finger \
-            _fink _first _flasher _flex _floppy \
-            _fortune _freebsd-update _fsh _fstat _functions \
-            _fuse_arguments _fuse_values _fuser _fusermount _gcc \
-            _gcore _gdb _generic _genisoimage _getclip \
+autoload -Uz _a2ps _a2utils _aap _acpi _acpitool \
+            _acroread _alias _aliases _all_labels _all_matches \
+            _alternative _analyseplugin _ant _antiword _apachectl \
+            _apm _approximate _apt _apt-file _apt-move \
+            _apt-show-versions _aptitude _arch_archives _arch_namespace _arg_compile \
+            _arguments _arp _arping _arrays _assign \
+            _attr _auto-apt _autocd _awk _axi-cache \
+            _bash_completions _baz _bind_addresses _bindkey _bison \
+            _bittorrent _bogofilter _brace_parameter _brctl _brew \
+            _bsd_pkg _bts _bug _builtin _bzip2 \
+            _bzr _cache_invalid _cal _calendar _call_function \
+            _canonical_paths _ccal _cd _cdbs-edit-patch _cdcd \
+            _cdr _cdrdao _cdrecord _chflags _chkconfig \
+            _chmod _chown _chrt _coffee _combination \
+            _comm _command _command_names _compdef _complete \
+            _complete_debug _complete_help _complete_help_generic _complete_tag _compress \
+            _condition _configure _coreadm _correct _correct_filename \
+            _correct_word _cowsay _cp _cpio _cplay \
+            _cssh _csup _ctags_tags _cut _cvs \
+            _cvsup _cygcheck _cygpath _cygrunsrv _cygserver \
+            _cygstart _dak _darcs _date _dchroot \
+            _dchroot-dsa _dcop _dd _deb_packages _debchange \
+            _debdiff _debfoster _debsign _default _defaults \
+            _delimiters _describe _description _devtodo _dhclient \
+            _dhcpinfo _dict _dict_words _diff _diff_options \
+            _diffstat _dir_list _directories _directory_stack _dirs \
+            _disable _dispatch _django _dladm _dlocate \
+            _dmidecode _domains _dpatch-edit-patch _dpkg _dpkg-buildpackage \
+            _dpkg-cross _dpkg-repack _dpkg_source _dput _du \
+            _dumpadm _dumper _dupload _dvi _dynamic_directory_name \
+            _ecasound _echotc _echoti _elinks _elm \
+            _email_addresses _emulate _enable _enscript _env \
+            _equal _espeak _ethtool _expand _expand_alias \
+            _expand_word _fab _fakeroot _fc _feh \
+            _fetch _fetchmail _ffmpeg _figlet _file_descriptors \
+            _file_systems _files _find _finger _fink \
+            _first _flasher _flex _floppy _fortune \
+            _freebsd-update _fsh _fstat _functions _fuse_arguments \
+            _fuse_values _fuser _fusermount _gcc _gcore \
+            _gdb _gem _generic _genisoimage _getclip \
             _getconf _getent _getfacl _getmail _git \
             _git-buildpackage _github _global _global_tags _globflags \
             _globqual_delims _globquals _gnome-gv _gnu_generic _gnupod \

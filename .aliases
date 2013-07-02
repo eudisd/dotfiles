@@ -19,7 +19,7 @@ alias prod="sudo cp /etc/hosts /etc/hosts.bak; sudo cp /etc/hosts.prod /etc/host
 alias report="sudo cp /etc/hosts /etc/hosts.bak; sudo cp /etc/hosts.report /etc/hosts"
 
 alias ws="grep '-server-' /etc/hosts"
-alias cdw="cd ~/repos/git/work/"
+alias cdw="cd ~/repos/git/work/sop/unified_platform"
 alias cdg="cd ~/repos/git/github"
 # List only directories
 alias lsd='ls -l | grep "^d"'
@@ -116,7 +116,7 @@ alias loge='tail -f /var/log/apache2/error_log'
 alias loga='tail -f /var/log/apache2/access_log'
 alias logm='tail -f /usr/local/var/log/mongodb/mongo.log'
 alias fbhookup='. ~/vm/fbhookup/bin/activate'
-alias htop='nocorrect htop' # This assumes you're using zsh
+
 alias website='. ~/vm/website/bin/activate'
 alias linky='. ~/vm/linky/bin/activate'
 alias default='. ~/vm/default/bin/activate'
@@ -127,7 +127,7 @@ alias vault='. ~/vm/vault/bin/activate'
 # Python aliases
 alias python_default='~/vm/default/bin/python'
 alias python_sop='~/vm/sop/bin/python'
-alias python_shell='cdw; cd sop/unified_platform; python manage.py shell_plus'
+alias python_shell='cdw; cd unified_platform; python manage.py shell_plus'
 
 # Misc
 #alias tmux="TERM=screen-256color-bce tmux"

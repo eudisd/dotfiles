@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+export SHELL=/bin/zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -9,7 +10,7 @@ ZSH_THEME="jnrowe"
 #ZSH_THEME="junkfood"
 #ZSH_THEME="kennethreitz"
 #ZSH_THEME="pygmalion"
-# ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
 #ZSH_THEME="random"
 
 # Example aliases
@@ -37,7 +38,7 @@ ZSH_THEME="jnrowe"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew django git-extras github history jira npm osx pip python rsync sublime)
+plugins=(git brew django git-extras github history jira npm osx pip python rsync sublime coffee cp fabric git-flow gem gnu-utils go lein node rails ruby)
 
 source $ZSH/oh-my-zsh.sh
 #source ~/.bash_profile
@@ -64,3 +65,9 @@ bindkey '^R' history-incremental-pattern-search-backward
 export WORKON_HOME=$HOME/vm
 
 [[ -s /Users/eudis//.nvm/nvm.sh ]] && . /Users/eudis//.nvm/nvm.sh # This loads NVM
+
+# RBEnv requirement
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+eval "$(rbenv init -)"

@@ -36,7 +36,7 @@ set hidden
 "turn on syntax highlighting
 syntax on
 
-set wrap
+" set wrap
 
 " ================ Search Settings  =================
 
@@ -74,7 +74,7 @@ filetype indent on
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·
 
-" set nowrap       "Don't wrap lines
+set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
 " ==============Set Leader Key ======================
@@ -185,12 +185,15 @@ set t_Co=256
 "let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
 " set background=dark
-colorscheme solarized
+" colorscheme solarized
 "colorscheme  codeblocks_dark 
 
-colorscheme dual
+colorscheme google
 
 " SnipMate config
 autocmd FileType python set ft=python.django " For SnipMate
 autocmd FileType html set ft=htmldjango.html " For SnipMate"
 
+let g:csexact_rgbtxt = fnamemodify("~/rgb.txt", ":p")
+
+filetype plugin on

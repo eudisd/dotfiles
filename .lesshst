@@ -7,4 +7,9 @@
 "-
 "opt/local/var/db/postgresql84/defaultdb/ restart
 "case
+"S#
+"S3
+"placement
+"sns
+"fast/
 .shell

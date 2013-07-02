@@ -1,115 +1,3 @@
-cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz
-cdw
-cd ~/Downloads/
-cd repos
-cd ~/repos/
-cd git
-cd github/
-cd dotfiles/
-la | less
-mv ~/.slate.txt .slate
-mv .slate ~
-ls
-ls
-mkdir repos
-ls
-ls
-cd repos
-ls
-mkdir git
-cd git
-ls
-mkdir github
-ls
-cd git
-ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
-sudo vi /etc/sysctl.conf
-sudo ps aux | grep "postgres"
-sudo ps aux | grep "psql"
-ls
-brew install pip
-pip
-brew install python
-pip
-sudo pip install virtualenv
-brew install libpng
-ls
-cd github
-ssh
-cd ~/
-mkdir .ssh
-ls
-cd .ssh
-ls
-ls
-ssh-keygen -t dsa -C "eudisd@gmail.com"
-ls
-cat id_dsa.pub
-ls
-cd ~/repos
-ls
-cd git
-ls
-cd github/
-ls
-git clone git@github.com:eudisd/dotfiles
-ls
-cd dotfiles
-ls
-./.osx
-ls
-psql
-brew search postgres
-sudo vim /etc/sysctl.conf
-sysctl -a
-sysctl -a | less
-ls
-ls
-ls
-cp .* ~
-cp -r .* ~
-brew install git
-brew install zsh
-man brew
-brew install ~/Dropbox/mac_installed_apps.txt 
-brew install \~/Dropbox/mac_installed_apps.txt 
-brew install $(cat ~/Dropbox/mac_installed_apps.txt )
-brew install $(cat ~/Dropbox/brew_installed_packages.txt)
-brew install ghc
-brew install haskell-platform
-xcode-install
-ls /usr/local/bin
-xcodebuild
-man xcode-select
-xcode-select -printpath
-xcode-select
-man xcode-select
-xcode-select -print-path
-ls $(xcode-select -print-path)
-ls $(xcode-select -print-path)/Library
-ls $(xcode-select -print-path)/Library/Xcode
-ls $(xcode-select -print-path)/Library/
-ls $(xcode-select -print-path)/Library/Frameworks
-ls /Library
-ls /Library/Frameworks/
-man xcodebuld
-man xcodebuild
-ls
-git status
-cp ~/.slate .
-git add .slate 
-git status
-git commit -am "Added slate file to dotfiles"
-git push origin master
-ls
-vim mac-setup.sh
-vim mac-setup.sh 
-vim mac-setup.sh 
-git status
-git add mac-setup.sh 
-git commit -am "Adding mac setups script as well"
-git push origin master
-chmod mac-setup.sh 
 chmod 777 mac-setup.sh 
 ./mac-setup.sh 
 ls
@@ -488,3 +376,237 @@ tmux
 exit
 exit() exit
 exit
+sysctl -a
+sysctl -a | grep 'kern*'
+sysctl -a | grep 'kern*\.sysv'
+cd ~/Desktop/
+curl --progress -O https://s3.amazonaws.com/up-db-rep/dumps/proddmp-20130122.dmp
+cdw
+cd sop
+pwd
+cd .vim
+cd bundle/YouCompleteMe/
+chmod a+x install.sh 
+./install.sh 
+cd ../ropevim/
+sudo python setup.py build
+sudo python setup.py install
+cd bu
+cd build/
+cd ../
+sudo pip install pylint pyflakes
+cd ~/.vim
+cd bundle/
+cd Command-T/
+vim README.txt 
+vi README.txt 
+cd ruby/
+ruby extconf.rb
+cd command-t/
+ruby extconf.rb
+make
+memcached
+ln -sfv /usr/local/opt/memcached/*.plist ~/Library/LaunchAgents
+/usr/local/opt/memcached/homebrew.mxcl.memcached.plist
+vim /usr/local/opt/memcached/homebrew.mxcl.memcached.plist
+sudo vi /usr/local/opt/memcached/homebrew.mxcl.memcached.plist
+sop
+vim
+zsh
+git
+cd ~/repos/git/github
+git clone git@github.com:eudis/dotfiles
+ssh-add ~/.ssh/github
+ssh-agent bash
+ssh-add ~/.ssh/github
+git clone git@github.com:eudisd/dotfiles
+ls
+ssh-add -K ~/.ssh/github
+ls
+cd dotfiles/
+ls
+chmod a+x bootstrap.sh 
+./bootstrap.sh 
+ls
+ls ~/
+la ~/
+ls ~/
+ls -la ~/
+zsh
+sudo ps aux "postgres"
+sudo ps aux | grep "postgres"
+cdg
+cd dotfiles/
+cp ~/Downloads/rgb.txt .
+git status
+git add rgb.txt 
+git diff
+git commit -am "adding rgb.txt for csexact"
+git push origin master
+cp rgb.txt ~/.vimr/
+cp rgb.txt ~/.vim
+cp rgb.txt ~/
+vim
+cdw
+cd sop
+cd ../
+mkdir work
+rm -rf work/
+mkdir tmp
+tmux
+exit
+cd ~
+mkdir .ssh
+ls
+cd .ssh
+ssh-keygen
+ssh-keygen -t dsa -C "eudisd@gmail.com"
+ssh-keygen -t dsa -C "eudisd@gmail.com"
+ls
+cat github.pub 
+git clone git@github.com:eudis/dotfiles
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+~/.osx
+~/Downloads/.osx
+mv ~/Downloads/.osx.txt ~/Downloads/.osx
+~/.osx
+~/Downloads/.osx
+chmod ~/Downloads/.osx
+chmod a+x ~/Downloads/.osx
+~/Downloads/.osx
+cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz
+ls
+cd ~
+ls
+mkdir repos
+cd repos
+mkdir git
+cd git
+mkdir github
+mkdir work
+cd work
+ls
+pwd
+ls
+gcc
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+brew doctor
+brew install $(ls ~/Dropbox/brew_installed_packages.txt)
+brew install $(ls ~/Dropbox/brew_installed_packages.txt)
+brew install $(cat ~/Dropbox/brew_installed_packages.txt)
+brew install $(cat ~/Dropbox/brew_installed_packages.txt)
+brew install $(cat ~/Dropbox/brew_installed_packages.txt)
+brew install $(cat ~/Dropbox/brew_installed_packages.txt)
+exit
+vim
+zsh
+exit
+echo $0
+vim
+sop
+cdw
+cd sop/unified_platform/
+vim
+vim ~/.vimrc
+subl ~/.bash_profile
+vim ~/.aliases 
+subl ~/.aliases 
+git log f0a78501
+git diff 97e2ebd3649a3f1bcf1ebae3ac68474a2a5f08d5 f0a78501
+vim
+vim ~/.aliases
+zsh
+exit
+gdb
+vim /cores/core.4285
+vim /cores/core.42856 
+la /cores
+gdb /cores/core.42856 
+gdb -c /cores/core.42856 
+brew install gfortran
+man gdb
+gdb -c /cores/core.42853
+sudo rm /cores/*
+sudo rm /cores/
+sudo rm /cores
+tmux
+ulimit -a
+ulimit -c 0
+ulimit -a
+gdb $(which python) --core=/cores/core.5134
+gdb $(which python) --core=/cores/core.51342
+vim
+cdw; cd sop/unified_platform
+vim
+sop
+zsh
+./manage.py runserver
+git stqtaus
+git status
+zsh
+mv ~/vm/sop ~/vm/sop_bak
+virtualenv ~/vm/sop
+sop
+vim ~/vm/sop_bak/bin/activate
+subl ~/vm/sop/bin/activate
+deactivate
+sop
+cdw
+cd sop
+pip install -r requirements.txt 
+cd unified_platform/
+./manage.py runserver
+pip install django-extensions
+pip install django-debugtoolbar
+pip install django-debug-toolbar
+./manage.py runserver
+vim 
+./manage.py runserver
+brew list
+brew uninstall $(brew list)
+brew install $(cat ~/Dropbox/brew_installed_packages.txt)
+vim ~/Dropbox/brew_installed_packages.txt 
+subl ~/Dropbox/brew_installed_packages.txt 
+brew install $(cat ~/Dropbox/brew_installed_packages.txt)
+tmux
+rm -rf ~/vm/sop
+virtualenv ~/vm/sop
+cdw
+cd sop
+subl requirements.txt 
+pip install -r requirements.txt 
+brew install r
+pip install -r requirements.txt 
+çsop
+sop
+pip install -r requirements.txt 
+brew install redis memcached
+pip install -r requirements.txt 
+brew search memcached
+brew install libmemcached
+ 
+pip install -r requirements.txt 
+pip install scipy
+pip install numpy
+ 
+pip install scipy
+./manage.py runserver
+cd unified_platform/
+./manage.py runserver
+pip install django-debug-toolbar
+./manage.py runserver
+vim manage.py 
+./manage.py runserver
+python_shell
+pip install rpy2
+pip install rpy2 --upgrade
+from rpy2 import robjects
+python_shell
+./manage.py runserver
+git reset --hard
+zsh
+exit
+nvm
+tmux
+tmux attach
+sop
