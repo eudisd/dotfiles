@@ -127,7 +127,7 @@ alias vault='. ~/vm/vault/bin/activate'
 # Python aliases
 alias python_default='~/vm/default/bin/python'
 alias python_sop='~/vm/sop/bin/python'
-alias python_shell='cdw; cd unified_platform; python manage.py shell_plus'
+alias python_shell='cdw; python manage.py shell_plus'
 
 # Misc
 #alias tmux="TERM=screen-256color-bce tmux"
