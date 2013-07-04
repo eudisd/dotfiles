@@ -118,6 +118,7 @@ alias logm='tail -f /usr/local/var/log/mongodb/mongo.log'
 alias fbhookup='. ~/vm/fbhookup/bin/activate'
 
 alias website='. ~/vm/website/bin/activate'
+alias site='. ~/vm/site/bin/activate'
 alias linky='. ~/vm/linky/bin/activate'
 alias default='. ~/vm/default/bin/activate'
 alias sop='. ~/vm/sop/bin/activate'

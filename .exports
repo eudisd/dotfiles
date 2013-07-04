@@ -21,6 +21,6 @@ export PATH=/usr/local/bin:$PATH
 export CLOJURESCRIPT_HOME=~/repos/git/clojurescript
 export PATH=$PATH:$CLOJURESCRIPT_HOME/bin
 
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:
 export LESS="-R"
 export EDITOR="vim"
