@@ -138,7 +138,8 @@ map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
 
 " This opens the definition on a split window
-" let g:pymode_rope_goto_def_newwin = "new"
+let g:pymode_rope_goto_def_newwin = "new"
+" let g:ropevim_open_files_in_tabs = 1
 
 " This bit of code imports all the modules into the Rope namespace,
 " so that it can detect those libs.
@@ -184,11 +185,11 @@ set t_Co=256
 "let g:solarized_termcolors = 256
 "let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
-" set background=dark
+set background=dark
 " colorscheme solarized
 "colorscheme  codeblocks_dark 
 
-colorscheme google
+colorscheme brookstream
 
 " SnipMate config
 autocmd FileType python set ft=python.django " For SnipMate
@@ -197,3 +198,9 @@ autocmd FileType html set ft=htmldjango.html " For SnipMate"
 let g:csexact_rgbtxt = fnamemodify("~/rgb.txt", ":p")
 
 filetype plugin on
+
+
+
+" Language specific settings
+autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
+autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
