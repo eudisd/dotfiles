@@ -10,16 +10,12 @@ export HISTCONTROL=ignoredups
 
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
-export PATH=$PATH:/usr/local/sbin
-if [[ "$OSTYPE" == ^darwin ]]; then
+
+if [[ "$OSTYPE" == darwin12.0 ]]; then
     PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+else
+	echo 'OSTYPE DIFFERENCE!  brew prefix not path not being set!'
 fi
-PATH=/Users/eudisd/opt/android-sdk-macosx/tools:$PATH
-
-export PATH=/usr/local/bin:$PATH
-
-export CLOJURESCRIPT_HOME=~/repos/git/clojurescript
-export PATH=$PATH:$CLOJURESCRIPT_HOME/bin
 
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:
 export LESS="-R"

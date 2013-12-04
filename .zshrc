@@ -14,8 +14,7 @@ plugins=(git brew django git-extras github history jira npm osx pip python rsync
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin
-export PATH=$PATH:/usr/local/mysql/bin
+
 for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
     [ -r "$file" ] && source "$file"
 done
