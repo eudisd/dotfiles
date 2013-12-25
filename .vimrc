@@ -189,7 +189,7 @@ set background=dark
 " colorscheme solarized
 "colorscheme  codeblocks_dark 
 
-colorscheme brookstream
+colorscheme google
 
 " SnipMate config
 autocmd FileType python set ft=python.django " For SnipMate
@@ -199,7 +199,8 @@ let g:csexact_rgbtxt = fnamemodify("~/rgb.txt", ":p")
 
 filetype plugin on
 
-
+"force html highlighting for files with other extensions
+au BufReadPost *.ejs set syntax=html
 
 " Language specific settings
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
