@@ -32,7 +32,6 @@ git_bundles = %w{
   git://github.com/tsaleh/vim-tmux.git
   git://github.com/vim-ruby/vim-ruby.git
   git://github.com/vim-scripts/Gist.vim.git
-  git://github.com/vim-scripts/IndexedSearch.git
   git://github.com/vim-scripts/jQuery.git
   git://github.com/Lokaltog/vim-powerline.git
   git://github.com/slim-template/vim-slim.git
@@ -41,7 +40,6 @@ git_bundles = %w{
   git://github.com/wincent/Command-T.git
   git://github.com/docunext/closetag.vim.git
   git://github.com/kevinw/pyflakes-vim.git
-  git://github.com/ervandew/supertab.git
   git://github.com/Raimondi/delimitMate.git
   git://github.com/majutsushi/tagbar.git
   git://github.com/altercation/vim-colors-solarized.git
