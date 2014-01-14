@@ -3,6 +3,10 @@ function md() {
 	mkdir -p "$@" && cd "$@"
 }
 
+# Open a man page in Mac Preview
+pman () {
+    man -t "${1}" | open -f -a /Applications/Preview.app
+}
 
 # find shorthand
 function f() {
