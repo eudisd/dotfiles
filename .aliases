@@ -21,6 +21,7 @@ alias report="sudo cp /etc/hosts /etc/hosts.bak; sudo cp /etc/hosts.report /etc/
 alias ws="grep '-server-' /etc/hosts"
 alias cdw="cd ~/repos/git/work/sop/unified_platform"
 alias cdg="cd ~/repos/git/github"
+alias cdio="cd ~/repos/git/github/caseio"
 # List only directories
 alias lsd='ls -l | grep "^d"'
 
@@ -119,11 +120,18 @@ alias fbhookup='. ~/vm/fbhookup/bin/activate'
 
 alias website='. ~/vm/website/bin/activate'
 alias site='. ~/vm/site/bin/activate'
+alias blog='. ~/vm/blog/bin/activate'
 alias linky='. ~/vm/linky/bin/activate'
+alias savegame='. ~/vm/savegame/bin/activate'
+alias gamedata='. ~/vm/gamedata/bin/activate'
+alias caseio='. ~/vm/caseio/bin/activate'
+alias dca='. ~/vm/dca/bin/activate'
+alias ib='. ~/vm/ib/bin/activate'
 alias default='. ~/vm/default/bin/activate'
 alias sop='. ~/vm/sop/bin/activate'
-alias sop_v2='. ~/vm/sop_v2/bin/activate'
 alias vault='. ~/vm/vault/bin/activate'
+alias trade='. ~/vm/trade/bin/activate'
+alias vncsession='ssh -XC -c blowfish-cbc,arcfour ubuntu@eudisduran'
 
 # Python aliases
 alias python_default='~/vm/default/bin/python'
