@@ -131,7 +131,7 @@ alias default='. ~/vm/default/bin/activate'
 alias sop='. ~/vm/sop/bin/activate'
 alias vault='. ~/vm/vault/bin/activate'
 alias trade='. ~/vm/trade/bin/activate'
-alias vncsession='ssh -XC -c blowfish-cbc,arcfour ubuntu@eudisduran'
+alias vncsession='ssh -XC -c blowfish-cbc,arcfour ubuntu@eudisduran.com -L 8080:localhost:5901 -N'
 
 # Python aliases
 alias python_default='~/vm/default/bin/python'
