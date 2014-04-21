@@ -137,16 +137,30 @@ nnoremap <leader>n :NERDTree<CR>
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
 
+" PyMode Configuration Begin
 let g:pymode = 1
+let g:pymode_folding = 1
+let g:pymode_breakpoint = 1
+let g:pymode_lint = 1
+let g:pymode_lint_on_fly = 0
+let g:pymode_lint_message = 1
+let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe']
 " This opens the definition on a split window
 let g:pymode_rope_goto_def_newwin = "new"
+let g:pymode_virtualenv_path = '/Users/eudis/vm/sop'
+
+let g:pymode_breakpoint_bind = '<leader>b'
 " let g:ropevim_open_files_in_tabs = 1
+
+
 
 " This bit of code imports all the modules into the Rope namespace,
 " so that it can detect those libs.
 let g:pymode_paths = ['/Users/eudis/repos/git/work/sop/unified_platform','/Users/eudis/repos/git/work/sop/unified_platform/apps','/Users/eudis/repos/git/work/sop/unified_platform/libs/unified','/Users/eudis/repos/git/work/sop/unified_platform/libs/third-party','/Users/eudis/vm/sop/lib/python2.7/site-packages']
 
 let g:ropevim_autoimport_modules = ["os.*", "traceback", "django.*", "xml.etree"]
+
+" PyMode Configuration End
 
 "let g:jedi#goto_command = "<leader>g"
 
@@ -160,7 +174,7 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 nmap <leader>gr :bufdo e<CR>
 
 " Mapping to load the sop faster
-nmap <leader>vsop :VirtualEnvActivate sop<CR>
+" nmap <leader>vsop :VirtualEnvActivate sop<CR>
 
 nmap <leader>bd :%bdelete<CR>
 
