@@ -137,6 +137,9 @@ nnoremap <leader>n :NERDTree<CR>
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
 
+" Ignore .pyc files in NerdTree
+let NERDTreeIgnore = ['\.pyc$']
+
 " PyMode Configuration Begin
 let g:pymode = 1
 let g:pymode_folding = 1
@@ -152,8 +155,9 @@ let g:pymode_rope_autoimport_modules = ["os.*", "traceback", "django.*", "xml.et
 " This opens the definition on a split window
 let g:pymode_rope_goto_def_newwin = "new"
 let g:pymode_virtualenv_path = '/Users/eudis/vm/sop'
-
 let g:pymode_breakpoint_bind = '<leader>b'
+let g:pymode_syntax = 1
+let g:pymode_syntax_all = 1
 " let g:ropevim_open_files_in_tabs = 1
 
 
