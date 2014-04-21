@@ -145,6 +145,10 @@ let g:pymode_lint = 1
 let g:pymode_lint_on_fly = 0
 let g:pymode_lint_message = 1
 let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe']
+let g:pymode_rope_completion = 1
+let g:pymode_rope_complete_on_dot = 1
+let g:pymode_rope_autoimport = 1
+let g:pymode_rope_autoimport_modules = ["os.*", "traceback", "django.*", "xml.etree"]
 " This opens the definition on a split window
 let g:pymode_rope_goto_def_newwin = "new"
 let g:pymode_virtualenv_path = '/Users/eudis/vm/sop'
@@ -158,7 +162,7 @@ let g:pymode_breakpoint_bind = '<leader>b'
 " so that it can detect those libs.
 let g:pymode_paths = ['/Users/eudis/repos/git/work/sop/unified_platform','/Users/eudis/repos/git/work/sop/unified_platform/apps','/Users/eudis/repos/git/work/sop/unified_platform/libs/unified','/Users/eudis/repos/git/work/sop/unified_platform/libs/third-party','/Users/eudis/vm/sop/lib/python2.7/site-packages']
 
-let g:ropevim_autoimport_modules = ["os.*", "traceback", "django.*", "xml.etree"]
+"let g:ropevim_autoimport_modules = ["os.*", "traceback", "django.*", "xml.etree"]
 
 " PyMode Configuration End
 
