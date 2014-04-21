@@ -137,12 +137,15 @@ nnoremap <leader>n :NERDTree<CR>
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
 
+let g:pymode = 1
 " This opens the definition on a split window
 let g:pymode_rope_goto_def_newwin = "new"
 " let g:ropevim_open_files_in_tabs = 1
 
 " This bit of code imports all the modules into the Rope namespace,
 " so that it can detect those libs.
+let g:pymode_paths = ['/Users/eudis/repos/git/work/sop/unified_platform','/Users/eudis/repos/git/work/sop/unified_platform/apps','/Users/eudis/repos/git/work/sop/unified_platform/libs/unified','/Users/eudis/repos/git/work/sop/unified_platform/libs/third-party','/Users/eudis/vm/sop/lib/python2.7/site-packages']
+
 let g:ropevim_autoimport_modules = ["os.*", "traceback", "django.*", "xml.etree"]
 
 "let g:jedi#goto_command = "<leader>g"
@@ -187,9 +190,9 @@ set t_Co=256
 "let g:solarized_contrast = "high"
 set background=dark
 " colorscheme solarized
-"colorscheme  codeblocks_dark 
+colorscheme  codeblocks_dark 
 
-colorscheme google
+"colorscheme 3dglasses
 
 " SnipMate config
 autocmd FileType python set ft=python.django " For SnipMate
