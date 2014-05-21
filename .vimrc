@@ -151,7 +151,13 @@ let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe']
 let g:pymode_rope_completion = 1
 let g:pymode_rope_complete_on_dot = 1
 let g:pymode_rope_autoimport = 1
-let g:pymode_rope_autoimport_modules = ["os.*", "traceback", "django.*", "xml.etree"]
+let g:pymode_rope_autoimport_modules = [
+            \"os.*",
+            \"traceback",
+            \"django.*",
+            \"xml.etree"
+            \]
+
 " This opens the definition on a split window
 let g:pymode_rope_goto_def_newwin = "new"
 let g:pymode_virtualenv_path = '/Users/eudis/vm/sop'
@@ -161,12 +167,9 @@ let g:pymode_syntax_all = 1
 " let g:ropevim_open_files_in_tabs = 1
 
 
-
 " This bit of code imports all the modules into the Rope namespace,
 " so that it can detect those libs.
 let g:pymode_paths = ['/Users/eudis/repos/git/work/sop/unified_platform','/Users/eudis/repos/git/work/sop/unified_platform/apps','/Users/eudis/repos/git/work/sop/unified_platform/libs/unified','/Users/eudis/repos/git/work/sop/unified_platform/libs/third-party','/Users/eudis/vm/sop/lib/python2.7/site-packages']
-
-"let g:ropevim_autoimport_modules = ["os.*", "traceback", "django.*", "xml.etree"]
 
 " PyMode Configuration End
 
@@ -211,8 +214,9 @@ set t_Co=256
 "let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
 set background=dark
-" colorscheme solarized
-colorscheme  codeblocks_dark 
+"colorscheme solarized
+"colorscheme  codeblocks_dark
+colorscheme
 
 "colorscheme 3dglasses
 
@@ -230,3 +234,9 @@ au BufReadPost *.ejs set syntax=html
 " Language specific settings
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
+
+" If you prefer the Omni-Completion tip window to close when a selection is
+" " made, these lines close it on movement in insert mode or when leaving
+" " insert mode
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
