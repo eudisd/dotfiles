@@ -70,5 +70,3 @@ git_bundles.each do |url|
   puts url
   `git clone -q #{url}`
 end
-
-Dir["*/.git"].each {|f| FileUtils.rm_rf(f) }
