@@ -55,6 +55,7 @@ git_bundles = %w{
   git clone https://github.com/tomtom/tlib_vim.git
   git clone https://github.com/MarcWeber/vim-addon-mw-utils.git
   git clone https://github.com/honza/vim-snippets.git
+  git://github.com/klen/python-mode.git
 }
 
 require 'fileutils'
