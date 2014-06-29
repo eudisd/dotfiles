@@ -57,6 +57,7 @@ git_bundles = %w{
   git clone https://github.com/honza/vim-snippets.git
 
   git clone https://github.com/vim-scripts/VimClojure 
+  git://github.com/klen/python-mode.git
 }
 
 require 'fileutils'
@@ -72,5 +73,3 @@ git_bundles.each do |url|
   puts url
   `git clone -q #{url}`
 end
-
-Dir["*/.git"].each {|f| FileUtils.rm_rf(f) }
