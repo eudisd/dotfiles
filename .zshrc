@@ -23,3 +23,9 @@ unset file
 # Set VIM bindings for the command line 
 set -o vi
 bindkey '^R' history-incremental-pattern-search-backward
+
+# Set Homebrew CoreUtils
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
+# Set CoreUtils Man Pages Path
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
