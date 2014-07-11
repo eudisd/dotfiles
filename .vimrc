@@ -129,10 +129,12 @@ nmap <c-t> :vs<bar>:b#<CR>  " Open the last closed window
 noremap <leader>o <Esc>:CommandT<CR> 
 noremap <leader>O <Esc>:CommandTFlush<CR> 
 noremap <leader>m <Esc>:CommandTBuffer<CR>
+noremap <leader>a =ip
 
 let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
 nnoremap <leader>n :NERDTree<CR>
+
 
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
@@ -166,6 +168,14 @@ let g:pymode_syntax = 1
 let g:pymode_syntax_all = 1
 " let g:ropevim_open_files_in_tabs = 1
 
+" Trigger configuration. Do not use <tab> if you use
+" https://github.com/Valloric/YouCompleteMe
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 
 " This bit of code imports all the modules into the Rope namespace,
 " so that it can detect those libs.
@@ -216,9 +226,10 @@ set t_Co=256
 set background=dark
 "colorscheme solarized
 "colorscheme  codeblocks_dark
-colorscheme
 
 "colorscheme 3dglasses
+"colorscheme random
+colorscheme baycomb
 
 " SnipMate config
 autocmd FileType python set ft=python.django " For SnipMate
@@ -233,10 +244,11 @@ au BufReadPost *.ejs set syntax=html
 
 " Language specific settings
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
-autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
+autocmd FileType javascript set tabstop=4|set shiftwidth=4|set expandtab
 
 " If you prefer the Omni-Completion tip window to close when a selection is
 " " made, these lines close it on movement in insert mode or when leaving
 " " insert mode
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
