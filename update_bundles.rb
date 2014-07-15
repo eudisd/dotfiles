@@ -56,8 +56,8 @@ git_bundles = %w{
   git clone https://github.com/MarcWeber/vim-addon-mw-utils.git
   git clone https://github.com/honza/vim-snippets.git
   git clone https://github.com/SirVer/ultisnips.git
-
-  git clone https://github.com/vim-scripts/VimClojure 
+  git clone https://github.com/rking/ag.vim
+  git clone https://github.com/vim-scripts/VimClojure
   git://github.com/klen/python-mode.git
 }
 
