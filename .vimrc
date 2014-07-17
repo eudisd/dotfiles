@@ -185,6 +185,8 @@ let g:pymode_paths = ['/Users/eudis/repos/git/work/sop/unified_platform','/Users
 
 "let g:jedi#goto_command = "<leader>g"
 
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
 hi SpellBad cterm=underline ctermfg=white
 
 " Edit and save/reload your vimrc file
@@ -223,13 +225,24 @@ set t_Co=256
 "let g:solarized_termcolors = 256
 "let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
-set background=dark
-"colorscheme solarized
+syntax enable
 "colorscheme  codeblocks_dark
+
+colorscheme chrysoprase
 
 "colorscheme 3dglasses
 "colorscheme random
-colorscheme baycomb
+"colorscheme baycomb
+"colorscheme carvedwoodcool
+"colorscheme 256-jungle
+
+set background=dark
+" solarized options 
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
+let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+"colorscheme solarized
 
 " SnipMate config
 autocmd FileType python set ft=python.django " For SnipMate
@@ -245,30 +258,4 @@ au BufReadPost *.ejs set syntax=html
 " Language specific settings
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType javascript set tabstop=4|set shiftwidth=4|set expandtab
-
-" If you prefer the Omni-Completion tip window to close when a selection is
-" " made, these lines close it on movement in insert mode or when leaving
-" " insert mode
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-
-" YouCompleteMe & UtilSnips <tab> Hack
-function! g:UltiSnips_Complete()
-    call UltiSnips#ExpandSnippet()
-    if g:ulti_expand_res == 0
-        if pumvisible()
-            return "\<C-n>"
-        else
-            call UltiSnips#JumpForwards()
-            if g:ulti_jump_forwards_res == 0
-                return "\<TAB>"
-            endif
-        endif
-    endif
-    return ""
-endfunction
-
-au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsListSnippets="<c-e>"
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+ 
