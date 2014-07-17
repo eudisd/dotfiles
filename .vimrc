@@ -228,21 +228,13 @@ set t_Co=256
 syntax enable
 "colorscheme  codeblocks_dark
 
-colorscheme chrysoprase
+"colorscheme chrysoprase
 
 "colorscheme 3dglasses
-"colorscheme random
+colorscheme random
 "colorscheme baycomb
 "colorscheme carvedwoodcool
 "colorscheme 256-jungle
-
-set background=dark
-" solarized options 
-let g:solarized_visibility = "high"
-let g:solarized_contrast = "high"
-let g:solarized_termtrans=1
-let g:solarized_termcolors=256
-"colorscheme solarized
 
 " SnipMate config
 autocmd FileType python set ft=python.django " For SnipMate
@@ -258,4 +250,5 @@ au BufReadPost *.ejs set syntax=html
 " Language specific settings
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType javascript set tabstop=4|set shiftwidth=4|set expandtab
- 
+
+set t_ut=
