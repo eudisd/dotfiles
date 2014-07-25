@@ -231,10 +231,10 @@ syntax enable
 "colorscheme chrysoprase
 
 "colorscheme 3dglasses
-colorscheme random
+"colorscheme random
 "colorscheme baycomb
 "colorscheme carvedwoodcool
-"colorscheme 256-jungle
+colorscheme chocolate
 
 " SnipMate config
 autocmd FileType python set ft=python.django " For SnipMate
@@ -252,3 +252,6 @@ autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType javascript set tabstop=4|set shiftwidth=4|set expandtab
 
 set t_ut=
+
+vnoremap > ><CR>gv 
+vnoremap < <<CR>gv 
