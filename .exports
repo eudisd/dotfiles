@@ -11,7 +11,7 @@ export HISTCONTROL=ignoredups
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 export PATH=/usr/local/bin:$PATH
-if [[ "$OSTYPE" == darwin12.0 ]]; then
+if [[ "$OSTYPE" == darwin13.0 ]]; then
     PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 else
 	echo 'OSTYPE DIFFERENCE!  brew prefix not path not being set!'
