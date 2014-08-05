@@ -20,6 +20,7 @@ alias report="sudo cp /etc/hosts /etc/hosts.bak; sudo cp /etc/hosts.report /etc/
 
 alias ws="grep '-server-' /etc/hosts"
 alias cdw="cd ~/repos/git/work/sop/unified_platform"
+alias cdj="cd ~/repos/git/work/sop/unified_platform/apps/up_multiplier/static"
 alias cdg="cd ~/repos/git/github"
 alias cdio="cd ~/repos/git/github/caseio"
 # List only directories
@@ -137,6 +138,7 @@ alias vncsession='ssh -XC -c blowfish-cbc,arcfour ubuntu@eudisduran.com -L 8080:
 alias python_default='~/vm/default/bin/python'
 alias python_sop='~/vm/sop/bin/python'
 alias python_shell='cdw; python manage.py shell_plus'
+
 
 # Misc
 #alias tmux="TERM=screen-256color-bce tmux"
