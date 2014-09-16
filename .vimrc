@@ -135,12 +135,13 @@ let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
 nnoremap <leader>n :NERDTree<CR>
 
-
-map <leader>j :RopeGotoDefinition<CR>
-map <leader>r :RopeRename<CR>
+"map <leader>j :RopeGotoDefinition<CR>
+"map <leader>r :RopeRename<CR>
 
 " Ignore .pyc files in NerdTree
 let NERDTreeIgnore = ['\.pyc$']
+
+
 
 " PyMode Configuration Begin
 let g:pymode = 1
@@ -150,9 +151,11 @@ let g:pymode_lint = 1
 let g:pymode_lint_on_fly = 0
 let g:pymode_lint_message = 1
 let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe']
+let g:pymode_virtualenv_path = '/Users/eudis/vm/sop'
 let g:pymode_rope_completion = 1
 let g:pymode_rope_complete_on_dot = 1
 let g:pymode_rope_autoimport = 1
+
 let g:pymode_rope_autoimport_modules = [
             \"os.*",
             \"traceback",
@@ -162,7 +165,7 @@ let g:pymode_rope_autoimport_modules = [
 
 " This opens the definition on a split window
 let g:pymode_rope_goto_def_newwin = "new"
-let g:pymode_virtualenv_path = '/Users/eudis/vm/sop'
+let g:pymode_rope_goto_definition_bind = '<leader>j'
 let g:pymode_breakpoint_bind = '<leader>b'
 let g:pymode_syntax = 1
 let g:pymode_syntax_all = 1
@@ -197,7 +200,6 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 nmap <leader>gr :bufdo e<CR>
 
 " Mapping to load the sop faster
-" nmap <leader>vsop :VirtualEnvActivate sop<CR>
 
 nmap <leader>bd :%bdelete<CR>
 
@@ -221,19 +223,16 @@ match OverLength /\%101v.\+/
 
 set t_Co=256
 
-"let g:jedi#related_names_command = "<leader>N"
-"let g:solarized_termcolors = 256
-"let g:solarized_visibility = "high"
-"let g:solarized_contrast = "high"
 syntax enable
 "colorscheme  codeblocks_dark
 
 "colorscheme chrysoprase
 
 "colorscheme 3dglasses
-"colorscheme random
 "colorscheme baycomb
 "colorscheme carvedwoodcool
+
+"colorscheme bubblegum
 colorscheme chocolate
 
 " SnipMate config
@@ -253,5 +252,6 @@ autocmd FileType javascript set tabstop=4|set shiftwidth=4|set expandtab
 
 set t_ut=
 
-vnoremap > ><CR>gv 
-vnoremap < <<CR>gv 
+"make < > shifts keep selection
+vnoremap < <gv
+vnoremap > >gv
