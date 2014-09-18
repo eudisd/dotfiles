@@ -253,5 +253,5 @@ autocmd FileType javascript set tabstop=4|set shiftwidth=4|set expandtab
 set t_ut=
 
 "make < > shifts keep selection
-vnoremap < <gv
-vnoremap > >gv
+vnoremap > ><CR>gv
+vnoremap < <<CR>gv
