@@ -59,6 +59,7 @@ git_bundles = %w{
   git clone https://github.com/rking/ag.vim
   git clone https://github.com/vim-scripts/VimClojure
   git://github.com/klen/python-mode.git
+  git@github.com:guns/vim-clojure-static.git
 }
 
 require 'fileutils'
