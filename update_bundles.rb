@@ -62,6 +62,7 @@ git_bundles = %w{
   git@github.com:guns/vim-clojure-static.git
   git@github.com:vim-scripts/paredit.vim.git
   git@github.com:tpope/vim-fireplace.git
+  git@github.com:guns/vim-clojure-highlight.git
 }
 
 require 'fileutils'
