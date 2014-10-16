@@ -34,7 +34,7 @@ set spell
 set hidden
 
 "turn on syntax highlighting
-syntax on
+
 
 " set wrap
 
@@ -197,7 +197,7 @@ nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 " Refresh all buffers in the current vim session.
-nmap <leader>gr :bufdo e<CR>
+nmap <leader>gr :bufdo e<CR>:syntax on<CR>
 
 " Mapping to load the sop faster
 
@@ -224,7 +224,8 @@ match OverLength /\%101v.\+/
 set t_Co=256
 
 syntax enable
-"colorscheme  codeblocks_dark
+"colorscheme  rdark
+colorscheme elrodeo
 
 "colorscheme chrysoprase
 
@@ -233,7 +234,7 @@ syntax enable
 "colorscheme carvedwoodcool
 
 "colorscheme bubblegum
-colorscheme chocolate
+"colorscheme chocolate
 
 " SnipMate config
 autocmd FileType python set ft=python.django " For SnipMate
@@ -255,3 +256,5 @@ set t_ut=
 "make < > shifts keep selection
 vnoremap > ><CR>gv
 vnoremap < <<CR>gv
+
+syntax on
