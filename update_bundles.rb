@@ -63,6 +63,7 @@ git_bundles = %w{
   git@github.com:tpope/vim-fireplace.git
   git@github.com:tpope/vim-classpath.git
   git@github.com:tpope/vim-leiningen.git
+  git@github.com:mxw/vim-jsx.git
 }
 
 require 'fileutils'
