@@ -224,17 +224,6 @@ match OverLength /\%101v.\+/
 set t_Co=256
 
 syntax enable
-"colorscheme  rdark
-colorscheme elrodeo
-
-"colorscheme chrysoprase
-
-"colorscheme 3dglasses
-"colorscheme baycomb
-"colorscheme carvedwoodcool
-
-"colorscheme bubblegum
-"colorscheme chocolate
 
 " SnipMate config
 autocmd FileType python set ft=python.django " For SnipMate
@@ -249,7 +238,8 @@ au BufReadPost *.ejs set syntax=html
 
 " Language specific settings
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
-autocmd FileType javascript set tabstop=4|set shiftwidth=4|set expandtab
+autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
+autocmd FileType jsx set tabstop=2|set shiftwidth=2|set expandtab
 
 set t_ut=
 
@@ -258,3 +248,5 @@ vnoremap > ><CR>gv
 vnoremap < <<CR>gv
 
 syntax on
+
+colorscheme brookstream
