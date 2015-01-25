@@ -1,0 +1,7 @@
+Bundle 'marijnh/tern_for_vim'
+UnBundle 'nathanaelkane/vim-indent-guides'
+
+Bundle 'rking/ag.vim'
+Bundle 'guns/vim-clojure-static'
+Bundle 'guns/vim-clojure-highlight'
+
