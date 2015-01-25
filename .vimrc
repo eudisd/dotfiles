@@ -250,3 +250,6 @@ vnoremap < <<CR>gv
 syntax on
 
 colorscheme brookstream
+
+" Keep NerdTree Open After Tab Is Opened
+:let NERDTreeQuitOnOpen = 0
