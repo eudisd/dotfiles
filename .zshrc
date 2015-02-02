@@ -30,10 +30,11 @@ PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
 # Set CoreUtils Man Pages Path
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-source ~/.nvm/nvm.sh
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/eudisduran/google-cloud-sdk/path.zsh.inc'
+#source '/Users/eudisduran/google-cloud-sdk/path.zsh.inc'
 
 # The next line enables bash completion for gcloud.
-source '/Users/eudisduran/google-cloud-sdk/completion.zsh.inc'
+#source '/Users/eudisduran/google-cloud-sdk/completion.zsh.inc'

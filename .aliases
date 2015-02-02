@@ -19,15 +19,14 @@ alias prod="sudo cp /etc/hosts /etc/hosts.bak; sudo cp /etc/hosts.prod /etc/host
 alias report="sudo cp /etc/hosts /etc/hosts.bak; sudo cp /etc/hosts.report /etc/hosts"
 
 alias ws="grep '-server-' /etc/hosts"
-alias cdw="cd ~/repos/work/sop/unified_platform"
-alias cdj="cd ~/repos/work/sop/unified_platform/apps/up_multiplier/static"
-alias cdg="cd ~/repos/github"
-alias cdio="cd ~/repos/github/caseio"
+alias cdw="cd ~/github/airtime"
+alias cdg="cd ~/github"
+
 # List only directories
 alias lsd='ls -l | grep "^d"'
 
 # Always use color output for `ls`
-if [[ "$OSTYPE" =~ ^darwin ]]; then
+if [[ "$OSTYPE" =~ ^darwin* ]]; then
 	alias ls="command ls -G"
 else
 	alias ls="command ls --color"
@@ -38,10 +37,6 @@ fi
 
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
-
-# hub override.
-alias git=hub  # not crazy about this..
-
 
 # git root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
