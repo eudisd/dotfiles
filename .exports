@@ -21,4 +21,13 @@ export PYTHONPATH=/usr/local/lib/python2.7/site-packages:
 export LESS="-R"
 export EDITOR="vim"
 export PATH=/usr/local/sbin:$PATH:$HOME/bin
-export EC2_HOME=$HOME/bin
+export EC2_HOME=$HOME/bin/ec2-api-tools-1.7.3.0
+export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH=$PATH:$EC2_HOME/bin
+
+if [ -e ".exports.local" ]
+then
+    source .exports.local
+else
+    echo ".exports.local does not exist"
+fi
