@@ -21,3 +21,4 @@ export PYTHONPATH=/usr/local/lib/python2.7/site-packages:
 export LESS="-R"
 export EDITOR="vim"
 export PATH=/usr/local/sbin:$PATH:$HOME/bin
+export EC2_HOME=$HOME/bin
