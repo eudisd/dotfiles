@@ -9,7 +9,7 @@ alias -- -="cd -"
 # programs
 alias slt='open -a "Sublime Text 2"'
 
-alias updatedb="sudo /usr/libexec/locate.updatedb"
+alias updatedb="sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist; sudo /usr/libexec/locate.updatedb"
 
 # List all files colorized in long format, including dot files
 alias la="ls -Gla"
