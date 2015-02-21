@@ -10,7 +10,7 @@ export HISTCONTROL=ignoredups
 
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
-export PATH=/usr/local/bin:$PATH
+export PATH=$PATH:/usr/local/bin
 if [[ "$OSTYPE" =~ ^darwin* ]]; then
     PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 else
@@ -27,7 +27,7 @@ export PATH=$PATH:$EC2_HOME/bin
 
 if [ -e ".exports.local" ]
 then
-    source .exports.local
+    source $HOME/.exports.local
 else
     echo ".exports.local does not exist"
 fi
