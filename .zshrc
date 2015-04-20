@@ -2,7 +2,9 @@
 ZSH=$HOME/.oh-my-zsh
 export SHELL=/bin/zsh
 
-ZSH_THEME="muse"
+#ZSH_THEME="muse"
+#ZSH_THEME="amuse"
+ZSH_THEME="nebirhos"
 #ZSH_THEME="jnrowe"
 #ZSH_THEME="junkfood"
 #ZSH_THEME="kennethreitz"
@@ -16,7 +18,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
+for file in ~/.{extra,bash_prompt,exports,aliases,functions,airtime}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
@@ -33,8 +35,4 @@ MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-# The next line updates PATH for the Google Cloud SDK.
-#source '/Users/eudisduran/google-cloud-sdk/path.zsh.inc'
-
-# The next line enables bash completion for gcloud.
-#source '/Users/eudisduran/google-cloud-sdk/completion.zsh.inc'
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
