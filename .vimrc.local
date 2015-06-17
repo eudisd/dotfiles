@@ -9,3 +9,6 @@ autocmd FileType jsx set tabstop=2|set shiftwidth=2|set expandtab
 
 " Custom NMAPS
 nmap <Leader>j :TernDef<CR>
+
+" JSX custom config
+let g:jsx_ext_required = 0
