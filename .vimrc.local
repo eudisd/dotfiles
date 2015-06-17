@@ -3,4 +3,9 @@
 " Language specific settings
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
+autocmd FileType html set tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType jsx set tabstop=2|set shiftwidth=2|set expandtab
+
+
+" Custom NMAPS
+nmap <Leader>j :TernDef<CR>
