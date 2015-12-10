@@ -63,3 +63,12 @@ function unidecode() {
 	perl -e "binmode(STDOUT, ':utf8'); print \"$@\""
 	echo # newline
 }
+
+function redux-init() {
+  wget https://github.com/gaearon/react-transform-boilerplate/zipball/master -O t.zip
+  unzip t.zip -d t
+  mkdir my-tmp-dir
+  mv t/gaearon-react-transform-boilerplate-*/* my-tmp-dir/
+  rm -rf t.zip t
+  mv my-tmp-dir $1
+}
