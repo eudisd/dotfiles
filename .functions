@@ -72,3 +72,7 @@ function redux-init() {
   rm -rf t.zip t
   mv my-tmp-dir $1
 }
+
+function gitprune () {
+  git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d
+}
