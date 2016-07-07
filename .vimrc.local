@@ -1,15 +1,27 @@
 :let NERDTreeQuitOnOpen = 0
 
-" Language specific settings
-autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
-autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
-autocmd FileType html set tabstop=2|set shiftwidth=2|set expandtab
-autocmd FileType jsx set tabstop=2|set shiftwidth=2|set expandtab
+" autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 
 " Custom NMAPS
 nmap <Leader>j :TernDef<CR>
 
+
+let g:syntastic_javascript_checkers = ['eslint']
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+
+
 " JSX custom config
 let g:jsx_ext_required = 0
+let g:NERDTreeWinSize = 20
 
 colorscheme lucius
+
+autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab

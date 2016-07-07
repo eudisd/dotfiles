@@ -1,6 +1,7 @@
 Bundle 'marijnh/tern_for_vim'
 Bundle 'mxw/vim-jsx'
 Bundle 'rking/ag.vim'
+Bundle 'vim-jsx'
 
 UnBundle 'nathanaelkane/vim-indent-guides'
 UnBundle 'guns/vim-clojure-static'
