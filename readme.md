@@ -1,7 +1,6 @@
 # Eudis's dotfiles... a fork of Paul's and of mathias's..
 
 ## Installation
-
 ### Using Git and the bootstrap script
 
 ```bash
