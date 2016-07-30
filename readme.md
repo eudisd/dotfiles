@@ -2,7 +2,6 @@
 
 ## Installation
 ### Using Git and the bootstrap script
-
 ```bash
 git clone https://github.com/eudisd/dotfiles.git && cd dotfiles && ./bootstrap.sh
 ```
