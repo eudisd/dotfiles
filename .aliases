@@ -20,6 +20,7 @@ alias report="sudo cp /etc/hosts /etc/hosts.bak; sudo cp /etc/hosts.report /etc/
 
 alias ws="grep '-server-' /etc/hosts"
 alias cdw="cd ~/github/airtime"
+alias cdp="cd ~/github/personal"
 alias cdg="cd ~/github"
 
 # List only directories
