@@ -1,21 +1,12 @@
-# Make vim the default editor
 export EDITOR="vim"
-# Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
-
-# Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
-#export PATH=$PATH:$HOME/bin/android-ndk-r10d
-
-# Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 export PATH=$PATH:/usr/local/bin
 if [[ "$OSTYPE" =~ ^darwin* ]]; then
-    PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-else
-	echo 'OSTYPE DIFFERENCE!  brew prefix not path not being set!'
+  PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 fi
 
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:
@@ -23,7 +14,6 @@ export LESS="-R"
 export EDITOR="vim"
 export PATH=/usr/local/sbin:$PATH:$HOME/bin
 export EC2_HOME=$HOME/bin/ec2-api-tools-1.7.3.0
-export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=$PATH:$EC2_HOME/bin
 
 if [ -e ".exports.local" ]
@@ -32,10 +22,3 @@ then
 else
     echo ".exports.local does not exist"
 fi
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-# Set Homebrew CoreUtils
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-
-export PATH=/usr/local/bin:$PATH
